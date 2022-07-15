@@ -1,6 +1,7 @@
 
 body{
     font-family: sans-serif!important;
+    /*background: #e9ecef;*/
     /*background-image: url('https://img.freepik.com/free-vector/watercolor-stains-abstract-background_23-2149107181.jpg?w=2000');*/
 }
 
@@ -44,6 +45,18 @@ a.navbar-brand{
     justify-content: space-between;
     width: 100%;
 }
+
+.form-inline{
+    width: 70%;
+    display: inline;
+}
+
+.create-button{
+    width: 30%;
+    display: inline;
+}
+
+
 .container-fluid{
     margin: 0;
     padding: 0;
@@ -65,7 +78,8 @@ a.navbar-brand{
 }
 
 header, footer{
-    background: linear-gradient(0 , #a71d2a, #c82333);
+    background: #a71d2a;
+    /*background: linear-gradient(0 , #a71d2a, #c82333);*/
     color: white;
 }
 
@@ -128,7 +142,7 @@ p{
 /*}*/
 
 .div-card{
-    padding: 0.5em 0.2em;
+    padding: 1em 1em;
     /*margin: 1em 1em;*/
 }
 
@@ -139,10 +153,10 @@ p{
     background: #e2e3e5;
 }
 
-.information {
-    width: 75%;
-    display: inline-block;
-}
+/*.information {*/
+/*    width: 75%;*/
+/*    display: inline-block;*/
+/*}*/
 
 .action{
     width: 25%;
@@ -197,4 +211,14 @@ p{
 
 /*#myBtn:hover {*/
 /*    background-color: #555; !* Add a dark-grey background on hover *!*/
+/*}*/
+
+#formCreate{
+    /*background-image: url("/src/img/background-modal-create.jpg");*/
+    background: linear-gradient(0 , #23272b, #ffffff);
+}
+
+/*.modal-dialog{*/
+/*    width: fit-content;*/
+/*    height: auto;*/
 /*}*/
