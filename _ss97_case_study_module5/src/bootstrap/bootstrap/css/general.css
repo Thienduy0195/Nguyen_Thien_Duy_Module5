@@ -1,8 +1,6 @@
 
-body{
-    font-family: sans-serif!important;
-    /*background: #e9ecef;*/
-    /*background-image: url('https://img.freepik.com/free-vector/watercolor-stains-abstract-background_23-2149107181.jpg?w=2000');*/
+body {
+    font-family: sans-serif !important;
 }
 
 .nav-item {
@@ -10,21 +8,19 @@ body{
     font-weight: unset;
     font-size: 1.1em;
 }
-p{
+
+p {
     font-size: 0.9em;
 }
 
-a{
+a {
     color: white;
 }
-
-.container{
-    background-color: white;
-    /*margin: 0 0;*/
-    display: block;
+.container-body{
+    padding: 2em 0;
 }
 
-a.navbar-brand{
+a.navbar-brand {
     padding: 0 0;
 }
 
@@ -35,7 +31,7 @@ a.navbar-brand{
     width: 100%;
 }
 
-.logo{
+.logo {
     padding-left: 0;
     padding-right: 0;
 }
@@ -46,119 +42,111 @@ a.navbar-brand{
     width: 100%;
 }
 
-.form-inline{
-    width: 70%;
+.form-inline {
     display: inline;
+    padding: 0;
+    margin: 0;
 }
 
-.create-button{
+.create-button {
     width: 30%;
     display: inline;
 }
 
 
-.container-fluid{
+.container-fluid {
     margin: 0;
     padding: 0;
 }
 
-.form-inline{
-    padding: 0;
-    width: 100%;
-    margin: 0;
-}
-
-.first-sub-nav{
+.first-sub-nav {
     margin-left: 5%;
     padding: 0;
 }
 
-.second-sub-nav{
+.second-sub-nav {
     padding: 0;
+    display: flex;
+    float: left;
 }
 
-header, footer{
-    background: #a71d2a;
-    /*background: linear-gradient(0 , #a71d2a, #c82333);*/
+header {
+    background: #343a40;
     color: white;
 }
 
-header{
+footer {
+    background: #ffffff;
+    font-family: "Tekton Pro";
+}
+
+footer .container {
+    background: #ffffff;
+}
+
+footer .introduce {
+    background: #343a40;
+    border-radius: 10px;
+    font-family: SansSerif;
+    font-size: 1.2em;
+}
+
+footer .introduce span {
+    color: #e2e3e5;
+}
+
+footer a {
+    color: black;
+}
+
+.second-nav {
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-.home-body{
+.home-body {
     display: flex;
 }
 
-.sidebar{
-    float: left;
-    padding: 0 0 0 1em ;
-    border-collapse: collapse;
-    background: #6c757d;
-}
-
-.content{
-    float: left;
-    background: orange;
+li {
     padding: 0 0;
 }
 
-li{
-    padding: 0 0;
-}
-
-.address-hotline{
+.address-hotline {
     display: flex;
     /*justify-content: space-between;*/
 }
 
-#address{
+#address {
     width: 10%;
     display: inline;
     float: left;
 }
 
-#hotline{
+#hotline {
     width: 50%;
     display: inline;
     float: left;
     padding: 0 0 0 1em;
 }
 
-p{
+p {
     margin-bottom: 0;
 }
 
-.admin-name{
+.admin-name {
     padding-right: 0;
     padding-left: 2em;
 }
 
-/*.infor{*/
-/*    padding-top: 1em;*/
-/*}*/
-
-.div-card{
-    padding: 1em 1em;
-    /*margin: 1em 1em;*/
-}
-
-
-.card-body{
+.card-body {
     padding: 0.1em 0;
-    display: flex ;
-    background: #e2e3e5;
+    /*display: flex;*/
+    /*background: #e2e3e5;*/
 }
 
-/*.information {*/
-/*    width: 75%;*/
-/*    display: inline-block;*/
-/*}*/
-
-.action{
+.action {
     width: 25%;
     display: inline-block;
     text-align: right;
@@ -183,6 +171,7 @@ p{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+
 
 .container-img:hover .image {
     opacity: 0.6;
@@ -209,16 +198,47 @@ p{
     font-size: 18px; /* Increase font size */
 }
 
-/*#myBtn:hover {*/
-/*    background-color: #555; !* Add a dark-grey background on hover *!*/
-/*}*/
-
-#formCreate{
-    /*background-image: url("/src/img/background-modal-create.jpg");*/
-    background: linear-gradient(0 , #23272b, #ffffff);
+label {
+    /*font-weight: 600;*/
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
 }
 
-/*.modal-dialog{*/
-/*    width: fit-content;*/
-/*    height: auto;*/
-/*}*/
+#formCreate {
+    border-color: #a71d2a;
+    padding: 1em 1em;
+}
+
+#modalCreate input, select {
+    padding: 0 0;
+}
+
+.modal-header {
+    padding: 0.5em 1em;
+    background-color: #ffe8a1;
+}
+
+.modal-body {
+    display: flex;
+    padding: 0 0;
+}
+
+.modalInput {
+    width: 50%;
+    padding: 0 0.6em;
+}
+
+.modal-footer {
+    padding: 0 0;
+}
+
+.form-group {
+    margin-bottom: 0.5em;
+}
+
+#modalCreate .form-control {
+    height: calc(1.2em + 0.75rem + 2px);
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0 5px;
+}

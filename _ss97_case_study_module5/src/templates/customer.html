@@ -2,40 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/_ss97_case_study_module5/src/bootstrap/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/_ss97_case_study_module5/src/bootstrap/bootstrap/css/style.css">
+    <link rel="stylesheet" href="/_ss97_case_study_module5/src/bootstrap/bootstrap/css/customer.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <meta charset="UTF-8">
-    <title>FACILITY MANAGEMENT</title>
+    <title>Customer Management</title>
 </head>
 <body>
-<header id="navbar">
-    <!--    <nav class="navbar navbar-expand-lg navbar-light first-nav">-->
-    <!--        <div class="logo col-md-2">-->
-    <!--            <a class="navbar-brand navbar-expand-lg" href="#"><img-->
-    <!--                    src="/_ss97_case_study_module5/src/img/logo-furama.png" height="68"-->
-    <!--                    width="auto"-->
-    <!--                    alt="#"></a>-->
-    <!--        </div>-->
-    <!--        <div class="col-md-8 address-hotline">-->
-    <!--            <div style="display: inline; float: left" class="col-md-7 col-sm-6 col-12" id="address">-->
-    <!--                <p>No. 103 – 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son District, Da Nang City, Vietnam</p>-->
-    <!--                <p>7.0 km from Da Nang International Airport</p>-->
-    <!--            </div>-->
-    <!--            <div style="display: inline; float: left" class="col-md-5 col-sm-6 col-12" id="hotline">-->
-    <!--                <p>Hotline: 84-236-3847 333/888</p>-->
-    <!--                <p>Fax: 84-236-3847 999</p>-->
-    <!--                <p>Email: reservation@furamavietnam.com</p>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class="admin-name col-md-2" style="padding-right: 0">-->
-    <!--            <a href="#" style="font-size: 1.2em ; font-weight: 500">-->
-    <!--                <span>-->
-    <!--                    LOG IN-->
-    <!--                </span>-->
-    <!--                <i class="fa-solid fa-right-to-bracket"></i>-->
-    <!--            </a>-->
-    <!--        </div>-->
-    <!--    </nav>-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light second-nav col-md-12 col-sm-12">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +58,7 @@
                 </li>
             </ul>
         </div>
-        <div class="search col-md-4 col-sm-6 second-sub-nav">
+        <div class="search col-md-5 col-sm-6 second-sub-nav">
             <form class="form-inline">
                 <input class="form-control mr-sm-2 search-place" type="search" placeholder="Enter customer's name"
                        aria-label="Search">
@@ -99,7 +71,6 @@
             </div>
         </div>
     </nav>
-</header>
 <div class="container-fluid">
     <div class="home-body">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -115,16 +86,16 @@
                     <img src="/_ss97_case_study_module5/src/img/customer-cover-2.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
-                    data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
-                    data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
+            <!--            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"-->
+            <!--                    data-slide="prev">-->
+            <!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+            <!--                <span class="sr-only">Previous</span>-->
+            <!--            </button>-->
+            <!--            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"-->
+            <!--                    data-slide="next">-->
+            <!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+            <!--                <span class="sr-only">Next</span>-->
+            <!--            </button>-->
         </div>
     </div>
 </div>
@@ -145,36 +116,96 @@
                 <th>Delete</th>
             </tr>
             </thead>
-<tbody id="customerList">
+            <tbody id="customerList">
 
-</tbody>
+            </tbody>
         </table>
     </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top" style="text-align: right">
     <img src="/_ss97_case_study_module5/src/img/Top-btn.jpg" style="height: 45px; width: auto" alt="">
 </button>
-<footer>
-    <nav class="navbar navbar-expand-lg navbar-light first-nav">
-        <div class="logo col-md-2">
-            <a class="navbar-brand navbar-expand-lg" href="#"><img
-                    src="/_ss97_case_study_module5/src/img/logo-furama.png" height="68"
-                    width="auto"
-                    alt="#"></a>
-        </div>
-        <div class="col-md-8 address-hotline">
-            <div style="display: inline; float: left" class="col-md-7 col-sm-6" id="address-footer">
-                <p>No. 103 – 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son District, Da Nang City, Vietnam</p>
-                <p>7.0 km from Da Nang International Airport</p>
+
+<div class="container-fluid">
+    <footer class="bd-footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3 introduce">
+                    <div class="logo col-md-2">
+                        <a class="navbar-brand navbar-expand-lg" href="#"><img
+                                src="/_ss97_case_study_module5/src/img/logo-furama.png" height="68"
+                                width="auto"
+                                alt="#"></a>
+                    </div>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">
+                            <span>
+                                Furama is a premier base for exploring one of Asia’s most exciting new destinations. Just a short drive from Danang lay four UNESCO-listed World Heritage Sites:
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                1.	The former imperial city of HUE
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                2.	The ancient Hoi An
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                3.	Champa civilization, My Son
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                4.	Phong Nha Caves
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#">Customer</a></li>
+                        <li class="mb-2"><a href="#">Employee</a></li>
+                        <li class="mb-2"><a href="#">Facility</a></li>
+                        <li class="mb-2"><a href="#">Contract</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Policy</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Security</a></li>
+                        <li class="mb-2"><a href="#">Payment</a></li>
+                        <li class="mb-2"><a href="#">Company trip</a></li>
+                        <li class="mb-2"><a href="#">Furama family</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Branch</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Phu Quoc</a></li>
+                        <li class="mb-2"><a href="#">Quy Nhon</a></li>
+                        <li class="mb-2"><a href="#">Hue</a></li>
+                        <li class="mb-2"><a href="#">Da Nang</a></li>
+                        <li class="mb-2"><a href="#">Ninh Binh</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Community</h5>
+                    <ul class="list-unstyled" style="color: black">
+                        <li class="mb-2"><a href="#">Discussions</a></li>
+                        <li class="mb-2"><a href="#">Open</a></li>
+                        <li class="mb-2"><a href="#"></a>Public</li>
+                    </ul>
+                </div>
             </div>
-            <div style="display: inline; float: left" class="col-md-5 col-sm-6" id="hotline-footer">
-                <p>Hotline: 84-236-3847 333/888</p>
-                <p>Fax: 84-236-3847 999</p>
-                <p>Email: reservation@furamavietnam.com</p>
-            </div>
         </div>
-    </nav>
-</footer>
+    </footer>
+</div>
 
 <!-- Modal Delete -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -199,6 +230,168 @@
                     <button type="submit" class="btn btn-danger delete">YES</button>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Edit -->
+<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold">EDIT CUSTOMER</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="formEdit">
+                <form id="updateEmployee" method="post">
+                    <div class="modal-body" id="modalEdit-body">
+                        <div class="modalInput">
+                            <input type="hidden" id="idEdit"/>
+                            <div class="form-group">
+                                <label for="position">CUSTOMER TYPE</label>
+                                <select id="position" class="form-control border-primary">
+                                    <option value="">--Choose Customer Type--</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>CUSTOMER NAME</label>
+                                <input type="text" placeholder="Please enter customer name"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>BIRTH DAY</label>
+                                <input type="date"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>ID CARD</label>
+                                <input type="text" placeholder="Please enter id card"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>PHONE NUMBER</label>
+                                <input type="text" placeholder="Please enter phone number"
+                                       class="form-control border-primary"/>
+                            </div>
+                        </div>
+                       <div class="modalInput">
+                           <div class="form-group">
+                               <label>CUSTOMER EMAIL</label>
+                               <input type="text" placeholder="Please enter customer email"
+                                      class="form-control border-primary"/>
+                           </div>
+                           <div class="form-group">
+                               <label>CUSTOMER CODE</label>
+                               <input type="text" placeholder="Please enter customer code"
+                                      class="form-control border-primary"/>
+                           </div>
+                           <div class="form-group">
+                               <label>CUSTOMER ADDRESS</label>
+                               <input type="text" placeholder="Please enter customer address"
+                                      class="form-control border-primary"/>
+                           </div>
+                           <div class="form-group">
+                               <label>CUSTOMER GENDER</label>
+                               <div>
+                                   <input type="radio" value="0" checked/> Male
+                                   <input type="radio" value="1"/> Female
+                                   <input type="radio" value=""/> Other
+                               </div>
+                           </div>
+                       </div>
+                       </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal"
+                                onclick="saveEditEmployee()">SAVE
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Create -->
+<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold">CREATING NEW</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="formCreate">
+                <form id="createCustomer" method="post">
+                    <div class="modal-body modalEdit-body">
+                        <div class="modalInput">
+                            <input type="hidden" id="idCreate"/>
+                            <div class="form-group">
+                                <label for="type">CUSTOMER TYPE</label>
+                                <select id="type" class="form-control border-primary">
+                                    <option value="">--Choose Customer Type--</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>CUSTOMER NAME</label>
+                                <input type="text" placeholder="Please enter customer name"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>BIRTH DAY</label>
+                                <input type="date"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>ID CARD</label>
+                                <input type="text" placeholder="Please enter id card"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>PHONE NUMBER</label>
+                                <input type="text" placeholder="Please enter phone number"
+                                       class="form-control border-primary"/>
+                            </div>
+                        </div>
+                        <div class="modalInput">
+                            <div class="form-group">
+                                <label>CUSTOMER EMAIL</label>
+                                <input type="text" placeholder="Please enter customer email"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>CUSTOMER CODE</label>
+                                <input type="text" placeholder="Please enter customer code"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>CUSTOMER ADDRESS</label>
+                                <input type="text" placeholder="Please enter customer address"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>CUSTOMER GENDER</label>
+                                <div>
+                                    <input type="radio" value="0" checked/> Male
+                                    <input type="radio" value="1"/> Female
+                                    <input type="radio" value=""/> Other
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal"
+                                onclick="saveCreateCustomer()">SAVE
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -258,11 +451,11 @@
         }
     ]
 
-        let content = '';
-        for (let i = 0; i < customer.length; i++) {
-            content += getCustomer(customer[i]);
-        }
-        document.getElementById('customerList').innerHTML = content;
+    let content = '';
+    for (let i = 0; i < customer.length; i++) {
+        content += getCustomer(customer[i]);
+    }
+    document.getElementById('customerList').innerHTML = content;
 
     function getCustomer(row) {
         return `            <tr>
@@ -288,65 +481,66 @@
                 </td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </td>
             </tr>`;
     }
-        function showInfoDelete(item) {
-            document.getElementById("name_delete").innerText = "Do you want to delete " + item + " ?";
+
+    function showInfoDelete(item) {
+        document.getElementById("name_delete").innerText = "Do you want to delete " + item + " ?";
+    }
+
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
         }
+    }
 
-        var mybutton = document.getElementById("myBtn");
-        window.onscroll = function () {
-            scrollFunction()
-        };
+    // Bind your button click, scroll direction and effect speed
+    document.getElementById("myBtn").onclick = function () {
+        scrollTo(0, 1000); // it will take 8 seconds to reach to top.
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+    }
+
+    // Element to move, time in ms to animate
+    function scrollTo(element, duration) {
+        var e = document.documentElement;
+        if (e.scrollTop === 0) {
+            var t = e.scrollTop;
+            ++e.scrollTop;
+            e = t + 1 === e.scrollTop-- ? e : document.body;
         }
+        scrollToC(e, e.scrollTop, element, duration);
+    }
 
-        // Bind your button click, scroll direction and effect speed
-        document.getElementById("myBtn").onclick = function () {
-            scrollTo(0, 1000); // it will take 8 seconds to reach to top.
+    // Element to move, element or px from, element or px to, time in ms to animate
+    function scrollToC(element, from, to, duration) {
+        if (duration <= 0) return;
+        if (typeof from === "object") from = from.offsetTop;
+        if (typeof to === "object") to = to.offsetTop;
 
+        scrollToX(element, from, to, 0, 1 / duration, 20, easeOutCuaic);
+    }
+
+    function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+        if (t01 < 0 || t01 > 1 || speed <= 0) {
+            element.scrollTop = xTo;
+            return;
         }
+        element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+        t01 += speed * step;
+        debugger;
+        setTimeout(function () {
+            scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+        }, step);
+    }
 
-        // Element to move, time in ms to animate
-        function scrollTo(element, duration) {
-            var e = document.documentElement;
-            if (e.scrollTop === 0) {
-                var t = e.scrollTop;
-                ++e.scrollTop;
-                e = t + 1 === e.scrollTop-- ? e : document.body;
-            }
-            scrollToC(e, e.scrollTop, element, duration);
-        }
-
-        // Element to move, element or px from, element or px to, time in ms to animate
-        function scrollToC(element, from, to, duration) {
-            if (duration <= 0) return;
-            if (typeof from === "object") from = from.offsetTop;
-            if (typeof to === "object") to = to.offsetTop;
-
-            scrollToX(element, from, to, 0, 1 / duration, 20, easeOutCuaic);
-        }
-
-        function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
-            if (t01 < 0 || t01 > 1 || speed <= 0) {
-                element.scrollTop = xTo;
-                return;
-            }
-            element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
-            t01 += speed * step;
-            debugger;
-            setTimeout(function () {
-                scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-            }, step);
-        }
-
-        function easeOutCuaic(t) {
-            t--;
-            return t * t * t + 1;
-        }
+    function easeOutCuaic(t) {
+        t--;
+        return t * t * t + 1;
+    }
 
 </script>
