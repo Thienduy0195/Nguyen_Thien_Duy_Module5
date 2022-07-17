@@ -100,7 +100,7 @@
     </div>
 </div>
 <div style="width: 100%" class="col-md-12">
-    <div class="row infor" style="clear: both">
+    <div class="container" style="clear: both">
         <table class="table table-striped" id="tableCustomer"
                style="border-color: #a71d2a; margin: 0; background-color: white">
             <thead class="thead-dark">
@@ -240,7 +240,7 @@
     <div class="modal-dialog modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-bold">EDIT CUSTOMER</h5>
+                <h5 class="modal-title">*****EDIT CUSTOMER*****</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -254,10 +254,14 @@
                                 <label for="position">CUSTOMER TYPE</label>
                                 <select id="position" class="form-control border-primary">
                                     <option value="">--Choose Customer Type--</option>
+                                    <option value="">Diamond</option>
+                                    <option value="">Gold</option>
+                                    <option value="">Silver</option>
+                                    <option value="">Member</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>CUSTOMER NAME</label>
+                                <label>FULL NAME</label>
                                 <input type="text" placeholder="Please enter customer name"
                                        class="form-control border-primary"/>
                             </div>
@@ -279,22 +283,22 @@
                         </div>
                        <div class="modalInput">
                            <div class="form-group">
-                               <label>CUSTOMER EMAIL</label>
-                               <input type="text" placeholder="Please enter customer email"
+                               <label>EMAIL</label>
+                               <input type="text" placeholder="Example@furama.com.vn"
                                       class="form-control border-primary"/>
                            </div>
                            <div class="form-group">
                                <label>CUSTOMER CODE</label>
-                               <input type="text" placeholder="Please enter customer code"
+                               <input type="text" placeholder="KH-xxxx"
                                       class="form-control border-primary"/>
                            </div>
                            <div class="form-group">
-                               <label>CUSTOMER ADDRESS</label>
+                               <label>ADDRESS</label>
                                <input type="text" placeholder="Please enter customer address"
                                       class="form-control border-primary"/>
                            </div>
                            <div class="form-group">
-                               <label>CUSTOMER GENDER</label>
+                               <label>GENDER</label>
                                <div>
                                    <input type="radio" value="0" checked/> Male
                                    <input type="radio" value="1"/> Female
@@ -321,7 +325,14 @@
     <div class="modal-dialog modal-md" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title font-weight-bold">CREATING NEW</h5>
+                <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </span>
+                    <span>
+                        NEW CUSTOMER
+                    </span>
+                </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -335,10 +346,14 @@
                                 <label for="type">CUSTOMER TYPE</label>
                                 <select id="type" class="form-control border-primary">
                                     <option value="">--Choose Customer Type--</option>
+                                    <option value="">Diamond</option>
+                                    <option value="">Gold</option>
+                                    <option value="">Silver</option>
+                                    <option value="">Member</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>CUSTOMER NAME</label>
+                                <label>FULL NAME</label>
                                 <input type="text" placeholder="Please enter customer name"
                                        class="form-control border-primary"/>
                             </div>
@@ -360,22 +375,22 @@
                         </div>
                         <div class="modalInput">
                             <div class="form-group">
-                                <label>CUSTOMER EMAIL</label>
-                                <input type="text" placeholder="Please enter customer email"
+                                <label>EMAIL</label>
+                                <input type="text" placeholder="Example@furama.com.vn"
                                        class="form-control border-primary"/>
                             </div>
                             <div class="form-group">
                                 <label>CUSTOMER CODE</label>
-                                <input type="text" placeholder="Please enter customer code"
+                                <input type="text" placeholder="KH-xxxx"
                                        class="form-control border-primary"/>
                             </div>
                             <div class="form-group">
-                                <label>CUSTOMER ADDRESS</label>
+                                <label>ADDRESS</label>
                                 <input type="text" placeholder="Please enter customer address"
                                        class="form-control border-primary"/>
                             </div>
                             <div class="form-group">
-                                <label>CUSTOMER GENDER</label>
+                                <label>GENDER</label>
                                 <div>
                                     <input type="radio" value="0" checked/> Male
                                     <input type="radio" value="1"/> Female
@@ -386,7 +401,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal"
+                        <button type="button" class="btn btn-success" data-dismiss="modal"
                                 onclick="saveCreateCustomer()">SAVE
                         </button>
                     </div>
@@ -437,7 +452,7 @@
             birthDay: "07-07-1978",
             idCard: "3748489475",
             phone: "0905565756",
-            email: "nguyenvandgmail.com",
+            email: "nguyenvand@gmail.com",
             gender: "Nam"
         },
         {
@@ -467,15 +482,15 @@
                 <td>${row.email}</td>
                 <td>${row.gender}</td>
                 <td>
-                    <a id="editItem" type="button" class="btn btn-primary" href="${row.id}"
+                    <a id="editItem" type="button" style="color: black" href="${row.id}"
                        data-toggle="modal" data-target="#modalEdit">
                         <i class="fa-solid fa-pen-to-square"></i>
                     </a>
                 </td>
                 <td>
-                    <a href="#" class="btn btn-danger" data-toggle="modal"
+                    <a href="#" data-toggle="modal" style="color: black"
                            data-target="#exampleModalCenter"
-                           onclick="showInfoDelete('${row.name}')">
+                           onclick="showInfoDelete('${row.id}')">
                             <i class="fa-solid fa-trash"></i>
                     </a>
                 </td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </td>

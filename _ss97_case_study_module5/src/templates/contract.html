@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/_ss97_case_study_module5/src/bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/_ss97_case_study_module5/src/bootstrap/bootstrap/css/contract.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>Contract Management</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light second-nav col-md-12 col-sm-12">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div style="margin-left: 5%" class="col-md-7 col-sm-12 collapse navbar-collapse first-sub-nav "
+         id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmployee" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Employee
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownEmployee">
+                    <a class="dropdown-item" href="#">Employee Management</a>
+                    <!--                            <a class="dropdown-item" href="/employee?action=create">Creating employee</a>-->
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Customer
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
+                    <a class="dropdown-item" href="/customer">Customer management</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Service
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
+                    <a class="dropdown-item" href="/facility">Service management</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContract" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Contract
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownContract">
+                    <a class="dropdown-item" href="/contract">Contract management</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="search col-md-5 col-sm-6 second-sub-nav">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2 search-place" type="search" placeholder="Enter contract id..."
+                   aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0 search-button" type="submit">SEARCH</button>
+        </form>
+        <div class="create-button">
+            <a data-toggle="modal" data-target="#modalCreate" style="margin: 0.5em">
+                <button type="button" class="btn btn-success">CREATE</button>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="home-body">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/_ss97_case_study_module5/src/img/contract-cover2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/_ss97_case_study_module5/src/img/contract-cover1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <!--            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"-->
+            <!--                    data-slide="prev">-->
+            <!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+            <!--                <span class="sr-only">Previous</span>-->
+            <!--            </button>-->
+            <!--            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"-->
+            <!--                    data-slide="next">-->
+            <!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+            <!--                <span class="sr-only">Next</span>-->
+            <!--            </button>-->
+        </div>
+    </div>
+</div>
+<div style="width: 100%" class="col-md-12">
+    <div class="container" style="clear: both">
+        <table class="table table-striped" id="tableCustomer"
+               style="border-color: #a71d2a; margin: 0; background-color: white">
+            <thead class="thead-dark">
+            <tr>
+                <th>#Code</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Deposit</th>
+                <th>Total payment</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody id="contractList">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="text-align: right">
+    <img src="/_ss97_case_study_module5/src/img/Top-btn.jpg" style="height: 45px; width: auto" alt="">
+</button>
+
+<div class="container-fluid">
+    <footer class="bd-footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3 introduce">
+                    <div class="logo col-md-2">
+                        <a class="navbar-brand navbar-expand-lg" href="#"><img
+                                src="/_ss97_case_study_module5/src/img/logo-furama.png" height="68"
+                                width="auto"
+                                alt="#"></a>
+                    </div>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">
+                            <span>
+                                Furama is a premier base for exploring one of Asia’s most exciting new destinations. Just a short drive from Danang lay four UNESCO-listed World Heritage Sites:
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                1.	The former imperial city of HUE
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                2.	The ancient Hoi An
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                3.	Champa civilization, My Son
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span>
+                                4.	Phong Nha Caves
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#">Customer</a></li>
+                        <li class="mb-2"><a href="#">Employee</a></li>
+                        <li class="mb-2"><a href="#">Facility</a></li>
+                        <li class="mb-2"><a href="#">Contract</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Policy</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Security</a></li>
+                        <li class="mb-2"><a href="#">Payment</a></li>
+                        <li class="mb-2"><a href="#">Company trip</a></li>
+                        <li class="mb-2"><a href="#">Furama family</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Branch</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Phu Quoc</a></li>
+                        <li class="mb-2"><a href="#">Quy Nhon</a></li>
+                        <li class="mb-2"><a href="#">Hue</a></li>
+                        <li class="mb-2"><a href="#">Da Nang</a></li>
+                        <li class="mb-2"><a href="#">Ninh Binh</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Community</h5>
+                    <ul class="list-unstyled" style="color: black">
+                        <li class="mb-2"><a href="#">Discussions</a></li>
+                        <li class="mb-2"><a href="#">Open</a></li>
+                        <li class="mb-2"><a href="#"></a>Public</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal Delete -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Confirm Delete?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="confirmDelete" method="post" action="/facility/delete">
+                <div class="modal-body">
+                    <input type="hidden" name="action" value="delete">
+                    <input type="hidden" id="id_delete" name="id">
+                    <div id="name_delete"></div>
+                    <div id="email_delete"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+                    <button type="submit" class="btn btn-danger delete">YES</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Create -->
+<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </span>
+                    <span>
+                        NEW CONTRACT
+                    </span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+            </div>
+            <div id="formCreate">
+                <form id="createCustomer" method="post">
+                    <div class="modal-body modalCreate-body">
+                        <input type="hidden" id="idCreate"/>
+                        <div class="form-group">
+                            <label>START DATE</label>
+                            <input type="date"
+                                   class="form-control border-primary"/>
+                        </div>
+                        <div class="form-group">
+                            <label>END DATE</label>
+                            <input type="date"
+                                   class="form-control border-primary"/>
+                        </div>
+                        <div class="form-group">
+                            <label>DEPOSIT</label>
+                            <input type="text" placeholder="Please enter deposit"
+                                   class="form-control border-primary"/>
+                        </div>
+                        <div class="form-group">
+                            <label>TOTAL PAYMENT</label>
+                            <input type="text" placeholder="Please enter total payment"
+                                   class="form-control border-primary"/>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal"
+                                onclick="saveCreateContract()">SAVE
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/_ss97_case_study_module5/src/bootstrap/bootstrap/js/jquery-3.6.0.min.js"></script>
+<script src="/_ss97_case_study_module5/src/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<script>
+
+    let contract = [
+        {
+            id: 1,
+            startDate: "07-07-2022",
+            endDate: "15-07-2022",
+            deposit: "3000",
+            totalPayment: "20000",
+        },
+        {
+            id: 2,
+            startDate: "07-07-2022",
+            endDate: "07-08-2022",
+            deposit: "5000",
+            totalPayment: "25000",
+        },
+        {
+            id: 3,
+            startDate: "08-07-2022",
+            endDate: "20-07-2022",
+            deposit: "2000",
+            totalPayment: "16000",
+        },
+        {
+            id: 4,
+            startDate: "16-07-2022",
+            endDate: "19-07-2022",
+            deposit: "4500",
+            totalPayment: "25000",
+        },
+        {
+            id: 5,
+            startDate: "07-07-2022",
+            endDate: "07-08-2022",
+            deposit: "3500",
+            totalPayment: "3000",
+        }
+    ]
+
+    let content = '';
+    for (let i = 0; i < contract.length; i++) {
+        content += getContract(contract[i]);
+    }
+    document.getElementById('contractList').innerHTML = content;
+
+    function getContract(row) {
+        return `            <tr>
+                <td>${row.id}</td>
+                <td>${row.startDate}</td>
+                <td>${row.endDate}</td>
+                <td>${row.deposit}</td>
+                <td>${row.totalPayment}</td>
+                <td>
+                    <a id="editItem" type="button" style="color: black" href="${row.id}"
+                       data-toggle="modal" data-target="#modalEdit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" style="color: black"
+                           data-target="#exampleModalCenter"
+                           onclick="showInfoDelete('${row.id}')">
+                            <i class="fa-solid fa-trash"></i>
+                    </a>
+                </td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </td>
+            </tr>`;
+    }
+
+    function showInfoDelete(item) {
+        document.getElementById("name_delete").innerText = "Do you want to delete this contract?";
+    }
+
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // Bind your button click, scroll direction and effect speed
+    document.getElementById("myBtn").onclick = function () {
+        scrollTo(0, 1000); // it will take 8 seconds to reach to top.
+
+    }
+
+    // Element to move, time in ms to animate
+    function scrollTo(element, duration) {
+        var e = document.documentElement;
+        if (e.scrollTop === 0) {
+            var t = e.scrollTop;
+            ++e.scrollTop;
+            e = t + 1 === e.scrollTop-- ? e : document.body;
+        }
+        scrollToC(e, e.scrollTop, element, duration);
+    }
+
+    // Element to move, element or px from, element or px to, time in ms to animate
+    function scrollToC(element, from, to, duration) {
+        if (duration <= 0) return;
+        if (typeof from === "object") from = from.offsetTop;
+        if (typeof to === "object") to = to.offsetTop;
+
+        scrollToX(element, from, to, 0, 1 / duration, 20, easeOutCuaic);
+    }
+
+    function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+        if (t01 < 0 || t01 > 1 || speed <= 0) {
+            element.scrollTop = xTo;
+            return;
+        }
+        element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+        t01 += speed * step;
+        debugger;
+        setTimeout(function () {
+            scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+        }, step);
+    }
+
+    function easeOutCuaic(t) {
+        t--;
+        return t * t * t + 1;
+    }
+
+</script>

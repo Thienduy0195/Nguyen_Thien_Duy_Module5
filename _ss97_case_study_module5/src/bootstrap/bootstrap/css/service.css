@@ -190,7 +190,6 @@ p {
     opacity: 0.9;
 }
 
-
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -208,12 +207,19 @@ p {
 }
 
 label {
-    /*font-weight: 600;*/
+    font-weight: 600;
+    font-size: 1em;
     margin-bottom: 0.2em;
     margin-top: 0.5em;
+    letter-spacing: 0.2em;
 }
 
 #formCreate {
+    border-color: #a71d2a;
+    padding: 1em 1em;
+}
+
+#formEdit {
     border-color: #a71d2a;
     padding: 1em 1em;
 }
@@ -222,9 +228,15 @@ label {
     padding: 0 0;
 }
 
+#modalEdit input, select {
+    padding: 0 0;
+}
+
 .modal-header {
     padding: 0.5em 1em;
-    background-color: #ffe8a1;
+    background-color: #1d2124;
+    font-weight: bold;
+    color: #f8f9fa;
 }
 
 .modal-body {
@@ -241,11 +253,22 @@ label {
     padding: 0 0;
 }
 
+.modal-footer button {
+    padding: 3px 6px;
+}
+
 .form-group {
     margin-bottom: 0.5em;
 }
 
 #modalCreate .form-control {
+    height: calc(1.2em + 0.75rem + 2px);
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0 5px;
+}
+
+#modalEdit .form-control {
     height: calc(1.2em + 0.75rem + 2px);
     font-size: 0.9em;
     text-align: left;

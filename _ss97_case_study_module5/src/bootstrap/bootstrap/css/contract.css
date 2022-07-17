@@ -216,15 +216,6 @@ p {
     border-color: #a71d2a;
     padding: 1em 1em;
 }
-.modal-body {
-    display: flex;
-    padding: 0 0;
-}
-
-.modalInput {
-    width: 50%;
-    padding: 0 0.6em;
-}
 
 label {
     font-weight: 600;
@@ -242,11 +233,6 @@ label {
     background-color: #1d2124;
     font-weight: bold;
     color: #f8f9fa;
-}
-
-.modal-body {
-    display: flex;
-    padding: 0 0;
 }
 
 .modal-footer {
