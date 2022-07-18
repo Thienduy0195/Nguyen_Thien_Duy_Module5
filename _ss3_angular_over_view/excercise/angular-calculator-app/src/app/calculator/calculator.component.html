@@ -1,0 +1,31 @@
+<fieldset>
+  <legend>Calculator</legend>
+  <table>
+    <tr>
+      <td>First operand:</td>
+      <td><input type="text" [(ngModel)]="firstOperand"></td>
+    </tr>
+    <tr>
+      <td>Operator:</td>
+      <td>
+        <select [(ngModel)]="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Second operand:</td>
+      <td><input type="text" [(ngModel)]="secondOperand"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button (click)="calculate()">Calculate</button>
+      </td>
+    </tr>
+  </table>
+  <p *ngIf="isShow">Result: {{result}}</p>
+</fieldset>
