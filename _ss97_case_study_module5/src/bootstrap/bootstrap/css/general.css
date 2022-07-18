@@ -20,6 +20,10 @@ a {
     padding: 2em 0;
 }
 
+.container-card{
+    margin-bottom: 3rem;
+}
+
 a.navbar-brand {
     padding: 0 0;
 }
@@ -46,6 +50,7 @@ a.navbar-brand {
     display: inline;
     padding: 0;
     margin: 0;
+    float: right;
 }
 
 .create-button {
@@ -241,4 +246,22 @@ label {
     font-size: 0.9em;
     text-align: left;
     padding: 0 5px;
+}
+
+.body-content{
+    display: flex;
+}
+
+.first-body-content, .second-body-content{
+    width: 50%;
+    background: #f8f9fa;
+}
+
+.second-body-content ul, .first-body-content ul{
+    list-style: none;
+}
+
+.ul-content{
+    padding-top: 2em;
+    padding-right: 3em;
 }

@@ -8,69 +8,78 @@
     <title>Customer Management</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light second-nav col-md-12 col-sm-12">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div style="margin-left: 5%" class="col-md-7 col-sm-12 collapse navbar-collapse first-sub-nav "
-             id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmployee" role="button"
-                       data-toggle="dropdown" aria-expanded="false">
-                        Employee
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownEmployee">
-                        <a class="dropdown-item" href="#">Employee Management</a>
-                        <!--                            <a class="dropdown-item" href="/employee?action=create">Creating employee</a>-->
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"
-                       data-toggle="dropdown" aria-expanded="false">
-                        Customer
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
-                        <a class="dropdown-item" href="/customer">Customer management</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button"
-                       data-toggle="dropdown" aria-expanded="false">
-                        Service
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
-                        <a class="dropdown-item" href="/facility">Service management</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContract" role="button"
-                       data-toggle="dropdown" aria-expanded="false">
-                        Contract
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownContract">
-                        <a class="dropdown-item" href="/contract">Contract management</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="search col-md-5 col-sm-6 second-sub-nav">
-            <form class="form-inline">
-                <input class="form-control mr-sm-2 search-place" type="search" placeholder="Enter customer's name"
+<nav class="navbar navbar-expand-lg navbar-light bg-light second-nav col-md-12 col-sm-12">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div style="margin-left: 5%" class="col-md-6 col-sm-12 collapse navbar-collapse first-sub-nav "
+         id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmployee" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Employee
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownEmployee">
+                    <a class="dropdown-item" href="#">Employee Management</a>
+                    <!--                            <a class="dropdown-item" href="/employee?action=create">Creating employee</a>-->
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Customer
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
+                    <a class="dropdown-item" href="/customer">Customer management</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Service
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
+                    <a class="dropdown-item" href="/facility">Service management</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContract" role="button"
+                   data-toggle="dropdown" aria-expanded="false">
+                    Contract
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownContract">
+                    <a class="dropdown-item" href="/contract">Contract management</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="search col-md-5 col-sm-6 second-sub-nav">
+        <div class="form-inline">
+            <form>
+                <input class="form-control search-place" type="search" placeholder="Enter customer's name"
                        aria-label="Search">
                 <button class="btn btn-secondary my-2 my-sm-0 search-button" type="submit">SEARCH</button>
             </form>
-            <div class="create-button">
-                <a data-toggle="modal" data-target="#modalCreate" style="margin: 0.5em">
-                    <button type="button" class="btn btn-success">CREATE</button>
-                </a>
-            </div>
         </div>
-    </nav>
+        <div class="create-button">
+            <a data-toggle="modal" data-target="#modalCreate" style="margin: 0.5em;">
+                <button type="button" class="btn btn-success">
+                        <span>
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    <span>
+                        NEW
+                        </span>
+                </button>
+            </a>
+        </div>
+    </div>
+</nav>
 <div class="container-fluid">
     <div class="home-body">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -281,32 +290,32 @@
                                        class="form-control border-primary"/>
                             </div>
                         </div>
-                       <div class="modalInput">
-                           <div class="form-group">
-                               <label>EMAIL</label>
-                               <input type="text" placeholder="Example@furama.com.vn"
-                                      class="form-control border-primary"/>
-                           </div>
-                           <div class="form-group">
-                               <label>CUSTOMER CODE</label>
-                               <input type="text" placeholder="KH-xxxx"
-                                      class="form-control border-primary"/>
-                           </div>
-                           <div class="form-group">
-                               <label>ADDRESS</label>
-                               <input type="text" placeholder="Please enter customer address"
-                                      class="form-control border-primary"/>
-                           </div>
-                           <div class="form-group">
-                               <label>GENDER</label>
-                               <div>
-                                   <input type="radio" value="0" checked/> Male
-                                   <input type="radio" value="1"/> Female
-                                   <input type="radio" value=""/> Other
-                               </div>
-                           </div>
-                       </div>
-                       </div>
+                        <div class="modalInput">
+                            <div class="form-group">
+                                <label>EMAIL</label>
+                                <input type="text" placeholder="Example@furama.com.vn"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>CUSTOMER CODE</label>
+                                <input type="text" placeholder="KH-xxxx"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>ADDRESS</label>
+                                <input type="text" placeholder="Please enter customer address"
+                                       class="form-control border-primary"/>
+                            </div>
+                            <div class="form-group">
+                                <label>GENDER</label>
+                                <div>
+                                    <input type="radio" value="0" checked/> Male
+                                    <input type="radio" value="1"/> Female
+                                    <input type="radio" value=""/> Other
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-warning" data-dismiss="modal"
