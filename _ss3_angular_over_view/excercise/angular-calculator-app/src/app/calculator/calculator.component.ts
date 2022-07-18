@@ -12,8 +12,8 @@ export class CalculatorComponent implements OnInit {
   result = 0;
   operator = '';
 
-  // @ts-ignore
-  calculate(): string {
+
+  calculate() {
     if (this.operator === '+') {
       this.result = parseFloat(this.firstOperand) + parseFloat(this.secondOperand);
     }

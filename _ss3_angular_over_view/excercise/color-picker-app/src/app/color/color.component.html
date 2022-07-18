@@ -1,0 +1,20 @@
+<select [(ngModel)]="firstColor">
+  <option value="color: red">Red</option>
+  <option value="color: blue">Blue</option>
+  <option value="color: orange">Orange</option>
+  <option value="color: yellow">Yellow</option>
+  <option value="color: black">Black</option>
+  <option value="color: green">Green</option>
+</select>
+
+<p [style]="firstColor">This is first paragraph to make color!</p>
+
+<select [(ngModel)]="secondColor">
+  <option value="color: red">Red</option>
+  <option value="color: blue">Blue</option>
+  <option value="color: orange">Orange</option>
+  <option value="color: yellow">Yellow</option>
+  <option value="color: black">Black</option>
+</select>
+
+<p [style]="secondColor">This is second paragraph to make color!</p>
