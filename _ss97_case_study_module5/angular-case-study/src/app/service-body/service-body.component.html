@@ -1,0 +1,426 @@
+<div class="container-fluid">
+  <div class="home-body">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img [src]="carousel1" class="d-block w-100"
+               alt="...">
+        </div>
+        <div class="carousel-item">
+          <img [src]="carousel2" class="d-block w-100"
+               alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container bg">
+  <div class="row infor" style="clear: both">
+    <div class="col-sm-4 col-6 div-card">
+      <div class="card container-img">
+        <img class="card-img-top image" [src]="service1"
+             alt="Card image">
+        <div class="card-body">
+          <div class="information">
+            <h5 class="card-title" style="margin-bottom: 0">THOUSAND STAR VIEW</h5>
+            <p class="card-text">Room size: 65.5 m2</p>
+          </div>
+        </div>
+        <div class="middle image">
+                    <span><a class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a></span>
+          <span>
+                        <a href="#" class="btn btn-danger" data-toggle="modal"
+                           data-target="#exampleModalCenter"
+                           onclick="showInfoDelete()">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 div-card">
+      <div class="card container-img">
+        <img class="card-img-top image" [src]="service2"
+             alt="Card image">
+        <div class="card-body">
+          <div class="information">
+            <h5 class="card-title" style="margin-bottom: 0">OCEAN STUDIO SUITE</h5>
+            <p class="card-text">Room size: 35.5 m2</p>
+          </div>
+        </div>
+        <div class="middle image">
+                    <span><a class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a></span>
+          <span>
+                        <a href="#" class="btn btn-danger" data-toggle="modal"
+                           data-target="#exampleModalCenter"
+                           onclick="showInfoDelete()">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 div-card">
+      <div class="card container-img">
+        <img class="card-img-top image" [src]="service3"
+             alt="Card image">
+        <div class="card-body">
+          <div class="information">
+            <h5 class="card-title" style="margin-bottom: 0">OCEAN STUDIO SUITE</h5>
+            <p class="card-text">Room size: 52.5 m2</p>
+          </div>
+        </div>
+        <div class="middle image">
+                    <span><a class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a></span>
+          <span>
+                        <a href="#" class="btn btn-danger" data-toggle="modal"
+                           data-target="#exampleModalCenter"
+                           onclick="showInfoDelete()">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 div-card">
+      <div class="card container-img">
+        <img class="card-img-top image" [src]="service4"
+             alt="Card image">
+        <div class="card-body">
+          <div class="information">
+            <h5 class="card-title" style="margin-bottom: 0">WINTER COMING SUITE</h5>
+            <p class="card-text">Room size: 46.5 m2</p>
+          </div>
+        </div>
+        <div class="middle image">
+                    <span><a class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a></span>
+          <span>
+                        <a href="#" class="btn btn-danger" data-toggle="modal"
+                           data-target="#exampleModalCenter"
+                           onclick="showInfoDelete()">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 div-card">
+      <div class="card container-img">
+        <img class="card-img-top image" [src]="service5"
+             alt="Card image">
+        <div class="card-body">
+          <div class="information">
+            <h5 class="card-title" style="margin-bottom: 0">OCEAN VIEW BUNGALOW</h5>
+            <p class="card-text">Room size: 72.5 m2</p>
+          </div>
+        </div>
+        <div class="middle image">
+                    <span><a class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a></span>
+          <span>
+                        <a href="#" class="btn btn-danger" data-toggle="modal"
+                           data-target="#exampleModalCenter"
+                           onclick="showInfoDelete()">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 div-card">
+      <div class="card container-img">
+        <img class="card-img-top image" [src]="service6"
+             alt="Card image">
+        <div class="card-body">
+          <div class="information">
+            <h5 class="card-title" style="margin-bottom: 0">LAKE VIEW VILLA</h5>
+            <p class="card-text">Room size: 59.5 m2</p>
+          </div>
+        </div>
+        <div class="middle image">
+                    <span><a class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a></span>
+          <span>
+                        <a href="#" class="btn btn-danger" data-toggle="modal"
+                           data-target="#exampleModalCenter"
+                           onclick="showInfoDelete()">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Delete -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Confirm Delete?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="confirmDelete" method="post" action="/facility/delete">
+        <div class="modal-body">
+          <input type="hidden" name="action" value="delete">
+          <input type="hidden" id="id_delete" name="id">
+          <div id="name_delete"></div>
+          <div id="email_delete"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+          <button type="submit" class="btn btn-danger delete">YES</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Create -->
+<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </span>
+          <span>
+                        NEW SERVICE
+                    </span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="createFacility">
+        <div id="formCreate">
+          <div class="modal-body" id="">
+            <div class="modalInput">
+              <input type="hidden" id="facility_id"/>
+              <div class="form-group">
+                <label for="serviceType">SERVICE TYPE</label>
+                <select id="serviceType" class="form-control border-primary"
+                        onchange="loadFacilityDataCreate()">
+                  <option value="">--Choose Service Type--</option>
+                  <option value="1">Villa</option>
+                  <option value="2">House</option>
+                  <option value="3">Room</option>
+                </select>
+                <p style="color: red" id="error_service_type"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_name">SERVICE NAME</label>
+                <input type="text" placeholder="Please enter service name"
+                       class="form-control border-primary" id="service_name"/>
+                <p style="color: red" id="error_name"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_area">SERVICE AREA</label>
+                <input type="text" placeholder="Please enter service area"
+                       class="form-control  border-primary" id="service_area"/>
+                <p style="color: red" id="error_area"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_cost">SERVICE COST</label>
+                <input type="text" placeholder="Please enter service cost" id="service_cost"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_cost"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_max_people">MAX PEOPLE</label>
+                <input type="text" placeholder="Please enter max people" id="service_max_people"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_max_people"></p>
+              </div>
+              <div class="form-group" id="div_standard_room">
+                <label for="standard_room">ROOM STANDARD</label>
+                <input type="text" placeholder="Please enter room standard" id="standard_room"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_room_standard"></p>
+              </div>
+            </div>
+            <div class="modalInput">
+              <div class="form-group" id="div_other_convenience">
+                <label for="other_convenience">CONVENIENCE</label>
+                <input type="text" placeholder="Please enter other convenience"
+                       id="other_convenience"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_other_convenience"></p>
+              </div>
+              <div class="form-group" id="divPoolArea">
+                <label for="pool_area">POOL AREA</label>
+                <input type="text" id="pool_area" placeholder="Please enter pool area"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_pool_area"></p>
+              </div>
+              <div class="form-group" id="divNumOfFloor">
+                <label for="numOfFloor">NUMBER OF FLOOR</label>
+                <input type="text" id="numOfFloor" placeholder="Please enter number of floor"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_num_of_floor"></p>
+              </div>
+              <div class="form-group" id="div_free_service">
+                <label for="free_service">FREE SERVICE</label>
+                <input type="text" id="free_service" placeholder="Please enter free service"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_free_service"></p>
+              </div>
+              <div class="form-group">
+                <label for="serviceCode">SERVICE CODE</label>
+                <input type="text" id="serviceCode" placeholder="Please enter service code"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_service_code"></p>
+              </div>
+              <div class="form-group">
+                <label for="rentType">RENT TYPE</label>
+                <select id="rentType" class="form-control border-primary">
+                  <option value="">--Choose Rent Type--</option>
+                  <option value="Day">Day</option>
+                  <option value="Month">Month</option>
+                  <option value="Year">Year</option>
+                </select>
+                <p style="color: red" id="error_rent_type"></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success"
+                    onclick="saveCreateFacility()">SAVE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Edit -->
+<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </span>
+          <span>
+                        NEW SERVICE
+                    </span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="editService">
+        <div id="formEdit">
+          <div class="modal-body">
+            <div class="modalInput">
+              <input type="hidden" id="editId"/>
+              <div class="form-group">
+                <label for="serviceType_edit">SERVICE TYPE</label>
+                <select id="serviceType_edit" class="form-control border-primary"
+                        onchange="loadFacilityDataEdit()">
+                  <option value="">--Choose Service Type--</option>
+                  <option value="1">Villa</option>
+                  <option value="2">House</option>
+                  <option value="3">Room</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="service_name_edit">SERVICE NAME</label>
+                <input type="text" placeholder="Please enter service name"
+                       class="form-control border-primary" id="service_name_edit"/>
+              </div>
+              <div class="form-group">
+                <label for="service_area_edit">SERVICE AREA</label>
+                <input type="text" placeholder="Please enter service area"
+                       class="form-control  border-primary" id="service_area_edit"/>
+              </div>
+              <div class="form-group">
+                <label for="service_cost_edit">SERVICE COST</label>
+                <input type="text" placeholder="Please enter service cost" id="service_cost_edit"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label for="service_max_people_edit">MAX PEOPLE</label>
+                <input type="text" placeholder="Please enter max people"
+                       id="service_max_people_edit"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="div_standard_room_edit">
+                <label for="standard_room_edit">ROOM STANDARD</label>
+                <input type="text" placeholder="Please enter room standard" id="standard_room_edit"
+                       class="form-control border-primary"/>
+              </div>
+            </div>
+            <div class="modalInput">
+              <div class="form-group" id="div_other_convenience_edit">
+                <label for="other_convenience_edit">CONVENIENCE</label>
+                <input type="text" placeholder="Please enter other convenience"
+                       id="other_convenience_edit"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="divPoolArea_edit">
+                <label for="pool_area_edit">POOL AREA</label>
+                <input type="text" id="pool_area_edit" placeholder="Please enter pool area"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="divNumOfFloor_edit">
+                <label for="numOfFloor_edit">NUMBER OF FLOOR</label>
+                <input type="text" id="numOfFloor_edit" placeholder="Please enter number of floor"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="div_free_service_edit">
+                <label for="free_service">FREE SERVICE</label>
+                <input type="text" id="free_service_edit" placeholder="Please enter free service"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label for="serviceCode">SERVICE CODE</label>
+                <input type="text" id="serviceCode_edit" placeholder="Please enter service code"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label for="rentType_edit">RENT TYPE</label>
+                <select id="rentType_edit" class="form-control border-primary">
+                  <option value="">--Choose Rent Type--</option>
+                  <option value="Day">Day</option>
+                  <option value="Month">Month</option>
+                  <option value="Year">Year</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success"
+                    onclick="saveCreateFacility()">SAVE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
