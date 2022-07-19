@@ -18,3 +18,13 @@
 </select>
 
 <h2 [style]="secondColor">This is second paragraph to make color!</h2>
+
+<select [(ngModel)]="thirdColor">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="orange">Orange</option>
+  <option value="yellow">Yellow</option>
+  <option value="black">Black</option>
+</select>
+
+<h2 [ngStyle]="{ color: thirdColor}" >This is third paragraph to make color!</h2>

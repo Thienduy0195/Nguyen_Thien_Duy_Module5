@@ -1,0 +1,91 @@
+<!-- Modal Create -->
+<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </span>
+          <span>
+                        NEW CUSTOMER
+                    </span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="formCreate">
+        <form id="createCustomer" method="post">
+          <div class="modal-body modalEdit-body">
+            <div class="modalInput">
+              <input type="hidden" id="idCreate"/>
+              <div class="form-group">
+                <label for="type">CUSTOMER TYPE</label>
+                <select id="type" class="form-control border-primary">
+                  <option value="">--Choose Customer Type--</option>
+                  <option value="">Diamond</option>
+                  <option value="">Gold</option>
+                  <option value="">Silver</option>
+                  <option value="">Member</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>FULL NAME</label>
+                <input type="text" placeholder="Please enter customer name"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label>BIRTH DAY</label>
+                <input type="date"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label>ID CARD</label>
+                <input type="text" placeholder="Please enter id card"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label>PHONE NUMBER</label>
+                <input type="text" placeholder="Please enter phone number"
+                       class="form-control border-primary"/>
+              </div>
+            </div>
+            <div class="modalInput">
+              <div class="form-group">
+                <label>EMAIL</label>
+                <input type="text" placeholder="Example@furama.com.vn"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label>CUSTOMER CODE</label>
+                <input type="text" placeholder="KH-xxxx"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label>ADDRESS</label>
+                <input type="text" placeholder="Please enter customer address"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label>GENDER</label>
+                <div>
+                  <input type="radio" value="0" checked/> Male
+                  <input type="radio" value="1"/> Female
+                  <input type="radio" value=""/> Other
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal"
+                    onclick="saveCreateCustomer()">SAVE
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

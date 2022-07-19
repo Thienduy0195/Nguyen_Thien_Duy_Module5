@@ -9,6 +9,15 @@ import { ServiceBodyComponent } from './service-body/service-body.component';
 import { ServiceModalEditComponent } from './service-modal-edit/service-modal-edit.component';
 import { ServiceModalCreateComponent } from './service-modal-create/service-modal-create.component';
 import { ServiceListComponent } from './service-list/service-list.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerBodyComponent } from './customer-body/customer-body.component';
+import { CustomerCreateModalComponent } from './customer-create-modal/customer-create-modal.component';
+import { CustomerEditModalComponent } from './customer-edit-modal/customer-edit-modal.component';
+import { ContractListComponent } from './contract-list/contract-list.component';
+import { ContractBodyComponent } from './contract-body/contract-body.component';
+import { ContractCreateModalComponent } from './contract-create-modal/contract-create-modal.component';
+import { HomeHeaderComponent } from './home-header/home-header.component';
+import { HomeBodyComponent } from './home-body/home-body.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +27,16 @@ import { ServiceListComponent } from './service-list/service-list.component';
     ServiceBodyComponent,
     ServiceModalEditComponent,
     ServiceModalCreateComponent,
-    ServiceListComponent
+    ServiceListComponent,
+    CustomerListComponent,
+    CustomerBodyComponent,
+    CustomerCreateModalComponent,
+    CustomerEditModalComponent,
+    ContractListComponent,
+    ContractBodyComponent,
+    ContractCreateModalComponent,
+    HomeHeaderComponent,
+    HomeBodyComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,54 @@
+<!-- Modal Create -->
+<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </span>
+          <span>
+                        NEW CONTRACT
+                    </span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color: white">&times;</span>
+        </button>
+      </div>
+      <div id="formCreate">
+        <form id="createCustomer" method="post">
+          <div class="modal-body modalCreate-body">
+            <input type="hidden" id="idCreate"/>
+            <div class="form-group">
+              <label>START DATE</label>
+              <input type="date"
+                     class="form-control border-primary"/>
+            </div>
+            <div class="form-group">
+              <label>END DATE</label>
+              <input type="date"
+                     class="form-control border-primary"/>
+            </div>
+            <div class="form-group">
+              <label>DEPOSIT</label>
+              <input type="text" placeholder="Please enter deposit"
+                     class="form-control border-primary"/>
+            </div>
+            <div class="form-group">
+              <label>TOTAL PAYMENT</label>
+              <input type="text" placeholder="Please enter total payment"
+                     class="form-control border-primary"/>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal"
+                    onclick="saveCreateContract()">SAVE
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
