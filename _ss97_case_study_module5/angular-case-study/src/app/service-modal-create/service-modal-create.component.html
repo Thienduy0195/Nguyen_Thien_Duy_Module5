@@ -1,0 +1,119 @@
+<!-- Modal Create -->
+<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </span>
+          <span>
+                        NEW SERVICE
+                    </span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="createFacility">
+        <div id="formCreate">
+          <div class="modal-body" id="">
+            <div class="modalInput">
+              <input type="hidden" id="facility_id"/>
+              <div class="form-group">
+                <label for="serviceType">SERVICE TYPE</label>
+                <select id="serviceType" class="form-control border-primary"
+                        onchange="loadFacilityDataCreate()">
+                  <option value="">--Choose Service Type--</option>
+                  <option value="1">Villa</option>
+                  <option value="2">House</option>
+                  <option value="3">Room</option>
+                </select>
+                <p style="color: red" id="error_service_type"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_name">SERVICE NAME</label>
+                <input type="text" placeholder="Please enter service name"
+                       class="form-control border-primary" id="service_name"/>
+                <p style="color: red" id="error_name"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_area">SERVICE AREA</label>
+                <input type="text" placeholder="Please enter service area"
+                       class="form-control  border-primary" id="service_area"/>
+                <p style="color: red" id="error_area"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_cost">SERVICE COST</label>
+                <input type="text" placeholder="Please enter service cost" id="service_cost"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_cost"></p>
+              </div>
+              <div class="form-group">
+                <label for="service_max_people">MAX PEOPLE</label>
+                <input type="text" placeholder="Please enter max people" id="service_max_people"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_max_people"></p>
+              </div>
+              <div class="form-group" id="div_standard_room">
+                <label for="standard_room">ROOM STANDARD</label>
+                <input type="text" placeholder="Please enter room standard" id="standard_room"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_room_standard"></p>
+              </div>
+            </div>
+            <div class="modalInput">
+              <div class="form-group" id="div_other_convenience">
+                <label for="other_convenience">CONVENIENCE</label>
+                <input type="text" placeholder="Please enter other convenience"
+                       id="other_convenience"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_other_convenience"></p>
+              </div>
+              <div class="form-group" id="divPoolArea">
+                <label for="pool_area">POOL AREA</label>
+                <input type="text" id="pool_area" placeholder="Please enter pool area"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_pool_area"></p>
+              </div>
+              <div class="form-group" id="divNumOfFloor">
+                <label for="numOfFloor">NUMBER OF FLOOR</label>
+                <input type="text" id="numOfFloor" placeholder="Please enter number of floor"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_num_of_floor"></p>
+              </div>
+              <div class="form-group" id="div_free_service">
+                <label for="free_service">FREE SERVICE</label>
+                <input type="text" id="free_service" placeholder="Please enter free service"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_free_service"></p>
+              </div>
+              <div class="form-group">
+                <label for="serviceCode">SERVICE CODE</label>
+                <input type="text" id="serviceCode" placeholder="Please enter service code"
+                       class="form-control border-primary"/>
+                <p style="color: red" id="error_service_code"></p>
+              </div>
+              <div class="form-group">
+                <label for="rentType">RENT TYPE</label>
+                <select id="rentType" class="form-control border-primary">
+                  <option value="">--Choose Rent Type--</option>
+                  <option value="Day">Day</option>
+                  <option value="Month">Month</option>
+                  <option value="Year">Year</option>
+                </select>
+                <p style="color: red" id="error_rent_type"></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">SAVE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
