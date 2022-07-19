@@ -117,3 +117,125 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  window.onload = function () {
+    loadFacilityDataCreate()
+    loadFacilityDataEdit()
+  }
+
+  function loadFacilityDataCreate() {
+    let id = document.getElementById("serviceType").value;
+    if (id == "1") { //villa
+      console.log(id)
+      document.getElementById("div_standard_room").style.display = "block";
+      document.getElementById("div_other_convenience").style.display = "block";
+      document.getElementById("divNumOfFloor").style.display = "block";
+      document.getElementById("divPoolArea").style.display = "block";
+      document.getElementById("div_free_service").style.display = "none";
+    } else if (id == "2") { //house
+      console.log(id)
+      document.getElementById("div_standard_room").style.display = "block";
+      document.getElementById("div_other_convenience").style.display = "block";
+      document.getElementById("divNumOfFloor").style.display = "block";
+      document.getElementById("divPoolArea").style.display = "none";
+      document.getElementById("div_free_service").style.display = "none";
+    } else { //room
+      console.log(id)
+      document.getElementById("div_standard_room").style.display = "none";
+      document.getElementById("div_other_convenience").style.display = "none";
+      document.getElementById("divNumOfFloor").style.display = "none";
+      document.getElementById("divPoolArea").style.display = "none";
+      document.getElementById("div_free_service").style.display = "block";
+    }
+  }
+
+  function loadFacilityDataEdit() {
+    let id = document.getElementById("serviceType_edit").value;
+    if (id == "1") { //villa
+      console.log(id)
+      document.getElementById("div_standard_room_edit").style.display = "block";
+      document.getElementById("div_other_convenience_edit").style.display = "block";
+      document.getElementById("divNumOfFloor_edit").style.display = "block";
+      document.getElementById("divPoolArea_edit").style.display = "block";
+      document.getElementById("div_free_service_edit").style.display = "none";
+    } else if (id == "2") { //house
+      console.log(id)
+      document.getElementById("div_standard_room_edit").style.display = "block";
+      document.getElementById("div_other_convenience_edit").style.display = "block";
+      document.getElementById("divNumOfFloor_edit").style.display = "block";
+      document.getElementById("divPoolArea_edit").style.display = "none";
+      document.getElementById("div_free_service_edit").style.display = "none";
+    } else { //room
+      console.log(id)
+      document.getElementById("div_standard_room_edit").style.display = "none";
+      document.getElementById("div_other_convenience_edit").style.display = "none";
+      document.getElementById("divNumOfFloor_edit").style.display = "none";
+      document.getElementById("divPoolArea_edit").style.display = "none";
+      document.getElementById("div_free_service_edit").style.display = "block";
+    }
+  }
+
+  function showInfoDelete() {
+    document.getElementById("name_delete").innerText = "Do you want to delete this facility?";
+  }
+
+  var mybutton = document.getElementById("myBtn");
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // Bind your button click, scroll direction and effect speed
+  document.getElementById("myBtn").onclick = function () {
+    scrollTo(0, 1000); // it will take 8 seconds to reach to top.
+
+  }
+
+  // Element to move, time in ms to animate
+  function scrollTo(element, duration) {
+    var e = document.documentElement;
+    if (e.scrollTop === 0) {
+      var t = e.scrollTop;
+      ++e.scrollTop;
+      e = t + 1 === e.scrollTop-- ? e : document.body;
+    }
+    scrollToC(e, e.scrollTop, element, duration);
+  }
+
+  // Element to move, element or px from, element or px to, time in ms to animate
+  function scrollToC(element, from, to, duration) {
+    if (duration <= 0) return;
+    if (typeof from === "object") from = from.offsetTop;
+    if (typeof to === "object") to = to.offsetTop;
+
+    scrollToX(element, from, to, 0, 1 / duration, 20, easeOutCuaic);
+  }
+
+  function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+    if (t01 < 0 || t01 > 1 || speed <= 0) {
+      element.scrollTop = xTo;
+      return;
+    }
+    element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+    t01 += speed * step;
+    debugger;
+    setTimeout(function () {
+      scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+    }, step);
+  }
+
+  function easeOutCuaic(t) {
+    t--;
+    return t * t * t + 1;
+  }
+
+</script>
