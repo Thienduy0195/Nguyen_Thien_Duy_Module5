@@ -18,15 +18,6 @@ export class CountdownTimerComponent implements OnInit {
   constructor() {
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    if ('seconds' in changes) {
-      let v = changes.seconds.currentValue;
-      v = typeof v === 'undefined' ? this.seconds : v;
-      const vFixed = Number(v);
-      this.seconds = Number.isNaN(vFixed) ? this.seconds : vFixed;
-    }
-  }
-
   clearTimer() {
     clearInterval(this.intervalId);
   }
