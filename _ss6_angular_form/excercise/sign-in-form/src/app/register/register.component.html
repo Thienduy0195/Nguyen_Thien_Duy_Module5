@@ -1,0 +1,78 @@
+<div class="container justify-content-center">
+<form novalidate (ngSubmit)="sign(rfInformation.value)" class="justify-content-md-center" [formGroup]="rfInformation" >
+  <div class="form-group text-center col-md-8">
+      <h1>SIGN IN FORM</h1>
+  </div>
+  <div class="form-group row">
+    <label for="name" class="col-md-2">Name</label>
+    <div class="col-md-6">
+      <input id="name" type="text" class="form-control border-primary" formControlName="name">
+      <p *ngIf="rfInformation.get('name').dirty && rfInformation.hasError('required', 'name')">Name is required!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-md-2">Email</label>
+    <div class="col-md-6">
+      <input id="email" type="text" class="form-control border-primary" formControlName="email">
+      <p *ngIf="rfInformation.get('email').dirty && rfInformation.hasError('required', 'email')">Email is required!</p>
+      <p *ngIf="rfInformation.get('email').dirty && rfInformation.hasError('email', 'email')">This email is not valid!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="password" class="col-md-2">Password</label>
+    <div class="col-md-6">
+      <input id="password" type="password" class="form-control border-primary" formControlName="password">
+      <p *ngIf="rfInformation.get('password').dirty && rfInformation.hasError('required', 'password')">Password is required!</p>
+      <p *ngIf="rfInformation.get('password').dirty && rfInformation.hasError('minlength', 'password')">Password is at least 6 character!</p>
+      <p *ngIf="rfInformation.get('password').dirty && rfInformation.hasError('maxlength', 'password')">Password is at max 18 character!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="confirmPassword" class="col-md-2">Confirm Password</label>
+    <div class="col-md-6">
+      <input id="confirmPassword" type="password" class="form-control border-primary" formControlName="confirmPassword">
+      <p *ngIf="rfInformation.get('confirmPassword').dirty && rfInformation.hasError('required', 'confirmPassword')">Confirm password is required!</p>
+      <p *ngIf="rfInformation.get('confirmPassword').dirty && rfInformation.hasError('mustMatch', 'confirmPassword')">This not match password!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="country" class="col-md-2">Country</label>
+    <div class="col-md-6">
+      <select id="country" name="country" class="form-control border-primary" formControlName="country">
+        <option value="">--Select country--</option>
+        <option *ngFor="let country of countryArray">
+          {{country}}
+        </option>
+      </select>
+      <p *ngIf="rfInformation.get('country').dirty && rfInformation.hasError('required', 'country')">Country is required!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="age" class="col-md-2">Age</label>
+    <div class="col-md-6">
+      <input id="age" name="age" type="date" class="form-control border-primary" formControlName="age">
+      <p *ngIf="rfInformation.get('age').dirty && rfInformation.hasError('required', 'age')">Age is required!</p>
+      <p *ngIf="rfInformation.get('age').dirty && rfInformation.hasError('not18', 'age')">Age must be more than 18!</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-md-2">Gender</label>
+    <div class="col-md-6">
+      <input name="gender" type="radio" formControlName="gender" value="male">Male
+      <input name="gender" type="radio" formControlName="gender" value =female>Female
+      <input name="gender" type="radio" formControlName="gender" value="other">Other
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="phone" class="col-md-2">Phone</label>
+    <div class="col-md-6">
+      <input id="phone" name="phone" type="text" class="form-control border-primary" formControlName="phone">
+      <p *ngIf="rfInformation.get('phone').dirty && rfInformation.hasError('required', 'phone')">Phone is required!</p>
+      <p *ngIf="rfInformation.get('phone').dirty && rfInformation.hasError('pattern', 'phone')">Wrong format phone number!</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <button type="submit" class="btn btn-primary" [disabled]="this.rfInformation.invalid" >SUBMIT</button>
+  </div>
+</form>
+</div>
