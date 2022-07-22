@@ -7,10 +7,9 @@ export class CustomValidators {
       if (matchingControl.errors && !matchingControl.errors.mustMatch) {
         return;
       }
-      console.log(control.value);
-      console.log(matchingControl.value);
+      // console.log(control.value);
+      // console.log(matchingControl.value);
       if (control.value !== matchingControl.value) {
-
         matchingControl.setErrors({mustMatch: true});
       } else {
         matchingControl.setErrors(null);

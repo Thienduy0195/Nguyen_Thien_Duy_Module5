@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Word} from "../word";
-import {DictionaryService} from "../dictionary.service";
-import {ActivatedRoute} from "@angular/router";
+import {Word} from '../word';
+import {DictionaryService} from '../dictionary.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-detail',

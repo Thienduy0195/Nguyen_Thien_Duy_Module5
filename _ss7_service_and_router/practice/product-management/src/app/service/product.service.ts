@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Product} from "../model/product";
+import {Product} from '../model/product';
 
 @Injectable({
   providedIn: 'root'
@@ -47,5 +47,19 @@ export class ProductService {
   findById(id: number): Product {
     this.product = this.products.find(item => item.id === id);
     return this.product;
+  }
+
+  updateProduct(id: number, product: Product) {
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].id === id) {
+        this.products[i] = product;
+      }
+    }
+  }
+
+  deleteProduct(id: number) {
+    this.products = this.products.filter(product => {
+      return product.id !== id;
+    });
   }
 }
