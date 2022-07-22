@@ -1,0 +1,14 @@
+<h2>DICTIONARY PAGE</h2>
+<table border="1px">
+  <tr>
+    <th>No.</th>
+    <th>Word</th>
+    <th>Meaning</th>
+  </tr>
+  <tr *ngFor = "let item of listWord, index as i">
+    <td>{{i}}</td>
+    <td>
+      <a  routerLink="/detail/{{item.word}}">{{item.word}}</a></td>
+    <td>{{item.meaning}}</td>
+  </tr>
+</table>

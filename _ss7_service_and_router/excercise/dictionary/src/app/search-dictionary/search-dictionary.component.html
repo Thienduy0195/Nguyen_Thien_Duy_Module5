@@ -1,0 +1,5 @@
+<h2>Oxford Dictionary</h2>
+<input type="text" (change)="translate($event.target.value)">
+<p *ngIf="searchingWord">
+  Nghĩa của từ {{searchingWord.word}} là: {{searchingWord.meaning}}
+</p>
