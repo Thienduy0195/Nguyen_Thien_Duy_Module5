@@ -73,7 +73,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
             <a class="dropdown-item"
-               href="#">Customer
+               href="#" [routerLink]="['customer']" routerLinkActive="router-link-active">Customer
               management</a>
           </div>
         </li>
@@ -84,7 +84,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
             <a class="dropdown-item"
-               href="#">Service
+               [routerLink]="['service']" routerLinkActive="router-link-active">Service
               management</a>
           </div>
         </li>
@@ -95,7 +95,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownContract">
             <a class="dropdown-item"
-               href="#">Contract
+               [routerLink]="['contract']" routerLinkActive="router-link-active">Contract
               management</a>
           </div>
         </li>

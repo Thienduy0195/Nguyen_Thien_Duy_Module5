@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-customer-body',
@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerBodyComponent implements OnInit {
 
-  carouselCover1 ='/assets/img/customer-cover-1.jpg';
-  carouselCover2 ='/assets/img/customer-cover-2.jpg';
+  carouselCover1 = '/assets/img/customer-cover-1.jpg';
+  carouselCover2 = '/assets/img/customer-cover-2.jpg';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

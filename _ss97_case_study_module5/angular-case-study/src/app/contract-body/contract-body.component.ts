@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContractBodyComponent implements OnInit {
 
-  carouselCover1 ='/assets/img/contract-cover1.jpg';
-  carouselCover2 ='/assets/img/contract-cover2.jpg';
+  carouselCover1 = '/assets/img/contract-cover1.jpg';
+  carouselCover2 = '/assets/img/contract-cover2.jpg';
 
   constructor() { }
 

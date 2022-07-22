@@ -11,22 +11,12 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmployee" role="button"
-           data-toggle="dropdown" aria-expanded="false">
-          Employee
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownEmployee">
-          <a class="dropdown-item" href="#">Employee Management</a>
-          <!--                            <a class="dropdown-item" href="/employee?action=create">Creating employee</a>-->
-        </div>
-      </li>
-      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"
            data-toggle="dropdown" aria-expanded="false">
           Customer
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
-          <a class="dropdown-item" href="/customer">Customer management</a>
+          <a class="dropdown-item" [routerLink]="['customer']" routerLinkActive="router-link-active">Customer management</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -35,7 +25,7 @@
           Service
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
-          <a class="dropdown-item" href="/facility">Service management</a>
+          <a class="dropdown-item" [routerLink]="['service']" routerLinkActive="router-link-active">Service management</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -44,7 +34,7 @@
           Contract
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownContract">
-          <a class="dropdown-item" href="/contract">Contract management</a>
+          <a class="dropdown-item" [routerLink]="['contract']" routerLinkActive="router-link-active">Contract management</a>
         </div>
       </li>
     </ul>

@@ -18,6 +18,10 @@ import { ContractBodyComponent } from './contract-body/contract-body.component';
 import { ContractCreateModalComponent } from './contract-create-modal/contract-create-modal.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
+import { ContractComponent } from './contract/contract.component';
+import { CustomerComponent } from './customer/customer.component';
+import { ServiceComponent } from './service/service.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { HomeBodyComponent } from './home-body/home-body.component';
     ContractBodyComponent,
     ContractCreateModalComponent,
     HomeHeaderComponent,
-    HomeBodyComponent
+    HomeBodyComponent,
+    ContractComponent,
+    CustomerComponent,
+    ServiceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

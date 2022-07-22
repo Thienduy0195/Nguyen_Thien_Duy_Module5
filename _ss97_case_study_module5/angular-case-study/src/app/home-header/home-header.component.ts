@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-header',
@@ -7,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeHeaderComponent implements OnInit {
 
-  logoHeader ='/assets/img/logo-furama.png';
-  carouselCover1 ='/assets/img/caros3.jpg';
-  carouselCover2 ='/assets/img/caros5.jpg';
-  carouselCover3 ='/assets/img/caros6.jpg';
+  logoHeader = '/assets/img/logo-furama.png';
+  carouselCover1 = '/assets/img/caros3.jpg';
+  carouselCover2 = '/assets/img/caros5.jpg';
+  carouselCover3 = '/assets/img/caros6.jpg';
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
