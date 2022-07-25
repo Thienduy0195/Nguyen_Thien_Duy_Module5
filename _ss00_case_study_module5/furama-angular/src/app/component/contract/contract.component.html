@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="home-body">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img [src]="carouselCover1" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img [src]="carouselCover2" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="width: 100%" class="col-md-12">
+  <div class="container" style="clear: both">
+    <table class="table table-striped" id="tableCustomer"
+           style="border-color: #a71d2a; margin: 0; background-color: white">
+      <thead class="thead thead-dark text-center">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Service Name</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Deposit</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let contract of contractList, index as index">
+        <td>{{index + 1}}</td>
+        <td>{{contract.customer.name}}</td>
+        <td>{{contract.service.name}}</td>
+        <td>{{contract.startDate}}</td>
+        <td>{{contract.endDate}}</td>
+        <td>{{contract.deposit}}</td>
+        <td>edit</td>
+        <td>delete</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

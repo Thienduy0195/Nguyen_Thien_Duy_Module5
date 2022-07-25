@@ -1,0 +1,363 @@
+{
+  "customerTypes": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "customers": [
+    {
+      "id": "KH-0001",
+      "name": "Nguyen Van A",
+      "birthday": "1990-02-02",
+      "gender": "1",
+      "idCard": "200814514",
+      "phoneNumber": "0915254154",
+      "email": "nguyenvana@codegym.com",
+      "address": "Da Nang",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      }
+    },
+    {
+      "id": "KH-0002",
+      "name": "Nguyen Van B",
+      "birthday": "1990-02-02",
+      "gender": "1",
+      "idCard": "20084585895",
+      "phoneNumber": "0906254154",
+      "email": "nguyenvanb@codegym.com",
+      "address": "Quang Nam",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "id": "KH-0003",
+      "name": "Nguyen Hong Ngan",
+      "birthday": "1996-02-02",
+      "gender": "0",
+      "idCard": "204859686",
+      "phoneNumber": "0906474857",
+      "email": "hongngan@gmail.com",
+      "address": "Quang Binh",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": "KH-2929",
+      "name": "Nguyen Van Binh",
+      "birthday": "2022-07-20",
+      "gender": "1",
+      "idCard": "589659686",
+      "phoneNumber": "0905383688",
+      "address": "16 Mai Lan Huong",
+      "email": "vanbinh@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": "KH-4845",
+      "name": "Nguyễn Thiên Duy",
+      "birthday": "2022-07-08",
+      "gender": "1",
+      "idCard": "586869606",
+      "phoneNumber": "0917579123",
+      "address": "Ngu Hanh Son",
+      "email": "thienduy0195@gmail.com",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": "KH-5485",
+      "name": "nguyen thi ban",
+      "birthday": "2022-07-01",
+      "gender": "0",
+      "idCard": "456566565",
+      "phoneNumber": "0905585865",
+      "address": "30 nguyen cong tranh",
+      "email": "thiban@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": "KH-4748",
+      "name": "NGUYEN CONG TRANH",
+      "birthday": "2022-07-09",
+      "gender": "1",
+      "idCard": "567567567",
+      "phoneNumber": "0906968797",
+      "address": "Thai Phien",
+      "email": "congtranh@gmail.com",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "THOUSAND STAR VIEW",
+      "area": 140,
+      "cost": 89,
+      "maxPeople": 4,
+      "serviceType": {
+        "id": 1,
+        "name": "Villa"
+      },
+      "roomStandard": "GARDEN STUDIO SUITE",
+      "otherConvenient": "Sea View",
+      "poolArea": 30,
+      "numberOfFloors": 3,
+      "rentType": {
+        "id": 3,
+        "name": "year"
+      },
+      "img": "/assets/img/facility-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Rose Room",
+      "area": 40,
+      "cost": 32,
+      "maxPeople": 2,
+      "serviceType": {
+        "id": 3,
+        "name": "Room"
+      },
+      "freeService": "Massage",
+      "rentType": {
+        "id": 1,
+        "name": "day"
+      },
+      "img": "/assets/img/facility-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "OCEAN STUDIO SUITE",
+      "area": 90,
+      "cost": 59,
+      "maxPeople": 3,
+      "serviceType": {
+        "id": 1,
+        "name": "Villa"
+      },
+      "roomStandard": "5 star",
+      "otherConvenient": "Forest",
+      "poolArea": 20,
+      "numberOfFloors": 3,
+      "rentType": {
+        "id": 1,
+        "name": "day"
+      },
+      "img": "/assets/img/facility-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "WINTER COMING SUITE",
+      "area": 45,
+      "cost": 39,
+      "maxPeople": 2,
+      "serviceType": {
+        "id": 2,
+        "name": "House"
+      },
+      "roomStandard": "4 star",
+      "otherConvenient": "AC",
+      "numberOfFloors": 2,
+      "rentType": {
+        "id": 1,
+        "name": "day"
+      },
+      "img": "/assets/img/facility-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "OCEAN VIEW BUNGALOW",
+      "area": 40,
+      "cost": 42,
+      "maxPeople": 3,
+      "serviceType": {
+        "id": 2,
+        "name": "House"
+      },
+      "roomStandard": "4 star",
+      "otherConvenient": "AC",
+      "numberOfFloors": 1,
+      "rentType": {
+        "id": 2,
+        "name": "month"
+      },
+      "img": "/assets/img/facility-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "LAKE VIEW VILLA",
+      "area": 40,
+      "cost": 25,
+      "maxPeople": 2,
+      "serviceType": {
+        "id": 3,
+        "name": "Room"
+      },
+      "freeService": "Massage",
+      "rentType": {
+        "id": 1,
+        "name": "day"
+      },
+      "img": "/assets/img/facility-6.jpg"
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "customer": {
+        "id": 1,
+        "code": "KH-0001",
+        "name": "Nguyen Van A",
+        "birthday": "1990-02-02",
+        "gender": "1",
+        "idCard": "200814514",
+        "phoneNumber": "0915254154",
+        "email": "nguyenvana@codegym.com",
+        "address": "Da Nang",
+        "customerType": {
+          "id": 5,
+          "name": "Member"
+        }
+      },
+      "service": {
+        "id": 1,
+        "name": "Ocean Villa",
+        "area": 140,
+        "cost": 89,
+        "maxPeople": 4,
+        "serviceType": {
+          "id": 1,
+          "name": "Villa"
+        },
+        "roomStandard": "5 star",
+        "otherConvenient": "Sea View",
+        "poolArea": 30,
+        "numberOfFloors": 3,
+        "rentType": {
+          "id": 3,
+          "name": "year"
+        },
+        "img": "hotel.jpg"
+      },
+      "startDate": "2002-01-02",
+      "endDate": "2002-01-05",
+      "deposit": 3460000
+    },
+    {
+      "id": 2,
+      "customer": {
+        "id": 2,
+        "code": "KH-0002",
+        "name": "Nguyen Van B",
+        "birthday": "1990-02-02",
+        "gender": "1",
+        "idCard": "20084585895",
+        "phoneNumber": "0906254154",
+        "email": "nguyenvanb@codegym.com",
+        "address": "Quang Nam",
+        "customerType": {
+          "id": 3,
+          "name": "Gold"
+        }
+      },
+      "service": {
+        "id": 3,
+        "name": "Western Villa",
+        "area": 90,
+        "cost": 59,
+        "maxPeople": 3,
+        "serviceType": {
+          "id": 1,
+          "name": "Villa"
+        },
+        "roomStandard": "5 star",
+        "otherConvenient": "Forest",
+        "poolArea": 20,
+        "numberOfFloors": 3,
+        "rentType": {
+          "id": 1,
+          "name": "day"
+        },
+        "img": "hotel.jpg"
+      },
+      "startDate": "2002-01-02",
+      "endDate": "2002-01-05",
+      "deposit": 23000000
+    },
+    {
+      "id": 3,
+      "customer": {
+        "id": 3,
+        "code": "KH-0003",
+        "name": "Nguyen Hong Ngan",
+        "birthday": "1996-02-02",
+        "gender": "0",
+        "idCard": "204859686",
+        "phoneNumber": "0906474857",
+        "email": "hongngan@gmail.com",
+        "address": "Quang Binh",
+        "customerType": {
+          "id": 2,
+          "name": "Platinum"
+        }
+      },
+      "service": {
+        "id": 3,
+        "name": "Western Villa",
+        "area": 90,
+        "cost": 59,
+        "maxPeople": 3,
+        "serviceType": {
+          "id": 1,
+          "name": "Villa"
+        },
+        "roomStandard": "5 star",
+        "otherConvenient": "Forest",
+        "poolArea": 20,
+        "numberOfFloors": 3,
+        "rentType": {
+          "id": 1,
+          "name": "day"
+        },
+        "img": "hotel.jpg"
+      },
+      "startDate": "2002-01-02",
+      "endDate": "2002-01-05",
+      "deposit": 10890000
+    }
+  ]
+}

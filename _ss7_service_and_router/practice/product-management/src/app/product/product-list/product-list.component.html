@@ -5,6 +5,7 @@
     <td>Tên</td>
     <td>Giá</td>
     <td>Mô tả</td>
+    <td>Danh mục</td>
     <td>Cập nhật</td>
     <td>Xóa</td>
   </tr>
@@ -13,8 +14,9 @@
     <td>{{product.name}}</td>
     <td>{{product.price}}</td>
     <td>{{product.description}}</td>
+    <td>{{product.category.name}}</td>
     <td><a routerLink="/product/update/{{product.id}}">Cập nhật</a></td>
     <td><a routerLink="/product/delete/{{product.id}}">Xóa</a></td>
-<!--    <td><button (click)="delete(product.id)">Xóa</button></td>-->
+<!--    <td><button (click)="delete(product.id)">Xóa</button></td>-->`
   </tr>
 </table>

@@ -1,0 +1,194 @@
+<!--<div class="container-fluid cover-page">-->
+<!--  <nav class="navbar navbar-expand-lg navbar-light bg-light second-nav col-md-12 col-sm-12">-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
+<!--            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div style="margin-left: 3%" class="col-md-5 col-sm-12 collapse navbar-collapse first-sub-nav "-->
+<!--         id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav mr-auto">-->
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"-->
+<!--             data-toggle="dropdown" aria-expanded="false">-->
+<!--            Customer-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">-->
+<!--            <a class="dropdown-item" routerLink="/customer">Customer management</a>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button"-->
+<!--             data-toggle="dropdown" aria-expanded="false">-->
+<!--            Service-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownService">-->
+<!--            <a class="dropdown-item" routerLink="/service">Service management</a>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContract" role="button"-->
+<!--             data-toggle="dropdown" aria-expanded="false">-->
+<!--            Contract-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownContract">-->
+<!--            <a class="dropdown-item" routerLink="/contract">Contract management</a>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <div class="search col-md-5 col-sm-6 second-sub-nav">-->
+<!--      <div class="form-inline">-->
+<!--        <form>-->
+<!--          <input class="form-control border-primary search-place" type="search" placeholder="Searching here..."-->
+<!--                 aria-label="Search">-->
+<!--          <button class="btn btn-secondary my-2 my-sm-0 search-button" type="submit">SEARCH</button>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--      <div class="create-button">-->
+<!--        <a data-toggle="modal" data-target="#modalCreate" style="margin: 0.5em;">-->
+<!--          <button type="button" class="btn btn-success"><span>-->
+<!--                    <i class="fa-solid fa-plus"></i>-->
+<!--                </span>-->
+<!--            <span>-->
+<!--                        NEW-->
+<!--                    </span></button>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--</div>-->
+
+<div class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light first-nav">
+      <div class="logo col-md-2">
+        <a class="navbar-brand navbar-expand-lg" href="#"><img
+          [src]="logoHeader" height="68"
+          width="auto"
+          alt="#"></a>
+      </div>
+      <div class="col-md-8 address-hotline">
+        <div style="display: inline; float: left" class="col-md-12 col-sm-10 col-12" id="address">
+          <h5>Furama Danang Resort and Spa</h5>
+          <p>
+                    <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    </span>
+            <span>
+                        103 – 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son District, Da Nang, Vietnam
+                    </span>
+          </p>
+          <p>
+                    <span>
+                    <i class="fa-solid fa-bookmark"></i>
+                    </span>
+            <span>
+                        7.0 km from Da Nang International Airport
+                    </span>
+          </p>
+          <p>
+                    <span>
+                    <i class="fa-solid fa-phone"></i>
+                    </span>
+            <span>
+                        84-236-3847 333/888
+                    </span>
+          </p>
+        </div>
+      </div>
+      <div class="admin-name col-md-2 col-sm-0" style="padding-right: 0">
+        <a href="#" style="font-size: 1em ; font-weight: 500; color: white">
+                <span>
+                    LOG IN
+                </span>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light second-nav col-md-12 col-sm-12">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div style="margin-left: 3%" class="col-md-7 col-sm-6 collapse navbar-collapse first-sub-nav "
+         id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmployee" role="button"-->
+<!--             data-toggle="dropdown" aria-expanded="false">-->
+<!--            Employee-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownEmployee">-->
+<!--            <a class="dropdown-item" href="#">Employee Management</a>-->
+<!--          </div>-->
+<!--        </li>-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            Customer
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
+            <a class="dropdown-item"
+               href="#" [routerLink]="['customer']" routerLinkActive="router-link-active">Customer
+              management</a>
+            <a class="dropdown-item"
+               href="#" [routerLink]="['customer/create']" routerLinkActive="router-link-active">Add new customer
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            Service
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
+            <a class="dropdown-item"
+               [routerLink]="['service']" routerLinkActive="router-link-active">Service
+              management</a>
+            <a class="dropdown-item"
+               href="#" [routerLink]="['service/create']" routerLinkActive="router-link-active">Add new service
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContract" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            Contract
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownContract">
+            <a class="dropdown-item"
+               [routerLink]="['contract']" routerLinkActive="router-link-active">Contract
+              management</a>
+            <a class="dropdown-item"
+               href="#" [routerLink]="['contract/create']" routerLinkActive="router-link-active">Add new contract
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+<!--    <div class="search row-cols-1 col-md-4 row-col-sm-6 second-sub-nav">-->
+<!--      <form class="form-inline">-->
+<!--        <input class="form-control mr-sm-2 search-place" type="search" placeholder="Search..."-->
+<!--               aria-label="Search">-->
+<!--        <button class="btn btn-secondary my-2 my-sm-0 search-button" type="submit">SEARCH</button>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--    <div class="create-button">-->
+<!--      <a data-toggle="modal" data-target="#modalCreate" style="margin: 0.5em;">-->
+<!--        <button type="button" class="btn btn-success"><span>-->
+<!--                    <i class="fa-solid fa-plus"></i>-->
+<!--                </span>-->
+<!--          <span>-->
+<!--                        NEW-->
+<!--                    </span></button>-->
+<!--      </a>-->
+<!--    </div>-->
+  </nav>
+</div>

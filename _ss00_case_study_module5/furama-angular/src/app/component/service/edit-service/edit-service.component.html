@@ -1,0 +1,108 @@
+<!-- Modal Edit -->
+<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+                    <span>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </span>
+          <span>
+                        EDIT SERVICE
+                    </span>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="editService">
+        <div id="formEdit">
+          <div class="modal-body">
+            <div class="modalInput">
+              <input type="hidden" id="editId"/>
+              <div class="form-group">
+                <label for="serviceType_edit">SERVICE TYPE</label>
+                <select id="serviceType_edit" class="form-control border-primary"
+                        onchange="loadFacilityDataEdit()">
+                  <option value="">--Choose Service Type--</option>
+                  <option value="1">Villa</option>
+                  <option value="2">House</option>
+                  <option value="3">Room</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="service_name_edit">SERVICE NAME</label>
+                <input type="text" placeholder="Please enter service name"
+                       class="form-control border-primary" id="service_name_edit"/>
+              </div>
+              <div class="form-group">
+                <label for="service_area_edit">SERVICE AREA</label>
+                <input type="text" placeholder="Please enter service area"
+                       class="form-control  border-primary" id="service_area_edit"/>
+              </div>
+              <div class="form-group">
+                <label for="service_cost_edit">SERVICE COST</label>
+                <input type="text" placeholder="Please enter service cost" id="service_cost_edit"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label for="service_max_people_edit">MAX PEOPLE</label>
+                <input type="text" placeholder="Please enter max people"
+                       id="service_max_people_edit"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="div_standard_room_edit">
+                <label for="standard_room_edit">ROOM STANDARD</label>
+                <input type="text" placeholder="Please enter room standard" id="standard_room_edit"
+                       class="form-control border-primary"/>
+              </div>
+            </div>
+            <div class="modalInput">
+              <div class="form-group" id="div_other_convenience_edit">
+                <label for="other_convenience_edit">CONVENIENCE</label>
+                <input type="text" placeholder="Please enter other convenience"
+                       id="other_convenience_edit"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="divPoolArea_edit">
+                <label for="pool_area_edit">POOL AREA</label>
+                <input type="text" id="pool_area_edit" placeholder="Please enter pool area"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="divNumOfFloor_edit">
+                <label for="numOfFloor_edit">NUMBER OF FLOOR</label>
+                <input type="text" id="numOfFloor_edit" placeholder="Please enter number of floor"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group" id="div_free_service_edit">
+                <label for="free_service_edit">FREE SERVICE</label>
+                <input type="text" id="free_service_edit" placeholder="Please enter free service"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label for="serviceCode_edit">SERVICE CODE</label>
+                <input type="text" id="serviceCode_edit" placeholder="Please enter service code"
+                       class="form-control border-primary"/>
+              </div>
+              <div class="form-group">
+                <label for="rentType_edit">RENT TYPE</label>
+                <select id="rentType_edit" class="form-control border-primary">
+                  <option value="">--Choose Rent Type--</option>
+                  <option value="Day">Day</option>
+                  <option value="Month">Month</option>
+                  <option value="Year">Year</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">SAVE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,9 +1,9 @@
 <h1>Cập nhật thông tin sản phẩm</h1>
-<form [formGroup]="productForm" (ngSubmit)="updateProduct(id)">
+<form [formGroup]="productForm" (ngSubmit)="submit()">
   <table>
     <tr>
       <td>Mã sản phẩm:</td>
-      <td><input type="number" formControlName="id"></td>
+      <td><input type="number" formControlName="id" readonly></td>
     </tr>
     <tr>
       <td>Tên sản phẩm:</td>
@@ -16,6 +16,13 @@
     <tr>
       <td>Mô tả về sản phẩm</td>
       <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr formGroupName="category">
+      <td>Danh mục</td>
+      <td><select formControlName="id">
+        <option selected [value]="null" disabled>Chọn danh mục</option>
+        <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
+      </select></td>
     </tr>
     <tr>
       <td></td>

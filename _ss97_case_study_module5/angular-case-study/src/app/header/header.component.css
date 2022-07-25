@@ -1,83 +1,83 @@
-.nav-item {
-  margin: 0 1em;
-  font-weight: unset;
-  font-size: 1.1em;
-}
+  .nav-item {
+    margin: 0 1em;
+    font-weight: unset;
+    font-size: 1.1em;
+  }
 
-p {
-  font-size: 0.9em;
-  margin-bottom: 0;
-}
+  p {
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
 
-a.navbar-brand {
-  padding: 0 0;
-}
+  a.navbar-brand {
+    padding: 0 0;
+  }
 
-.logo {
-  padding-left: 0;
-  padding-right: 0;
-}
+  .logo {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-.second-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+  .second-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-.form-inline {
-  display: inline;
-  padding: 0;
-  margin: 0 0 0 3em;
-}
+  .form-inline {
+    display: inline;
+    padding: 0;
+    margin: 0 0 0 3em;
+  }
 
-.search-place{
-  margin: 0;
-}
+  .search-place{
+    margin: 0;
+  }
 
-.search-button{
-  margin-left: 1em;
-}
+  .search-button{
+    margin-left: 1em;
+  }
 
 
-.create-button {
-  width: 25%;
-  display: inline;
-  margin-left: 2em;
-}
+  .create-button {
+    width: 25%;
+    display: inline;
+    margin-left: 2em;
+  }
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
-}
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
 
-.first-sub-nav {
-  margin-left: 5%;
-  padding: 0;
-}
+  .first-sub-nav {
+    margin-left: 5%;
+    padding: 0;
+  }
 
-.second-sub-nav {
-  padding: 0;
-  display: flex;
-  float: left;
-  margin-left: 8em;
-}
+  .second-sub-nav {
+    padding: 0;
+    display: flex;
+    float: left;
+    margin-left: 8em;
+  }
 
-header {
-  background: #343a40;
-  color: white;
-}
+  header {
+    background: #343a40;
+    color: white;
+  }
 
-.second-nav {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-}
+  .second-nav {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
 
-li {
-  padding: 0 0;
-}
+  li {
+    padding: 0 0;
+  }
 
-.admin-name {
-  padding-right: 0;
-  padding-left: 2em;
-}
+  .admin-name {
+    padding-right: 0;
+    padding-left: 2em;
+  }

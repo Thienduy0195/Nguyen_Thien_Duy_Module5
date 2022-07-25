@@ -22,6 +22,8 @@ import { ContractComponent } from './contract/contract.component';
 import { CustomerComponent } from './customer/customer.component';
 import { ServiceComponent } from './service/service.component';
 import { HomeComponent } from './home/home.component';
+import {HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -44,12 +46,14 @@ import { HomeComponent } from './home/home.component';
     ContractComponent,
     CustomerComponent,
     ServiceComponent,
-    HomeComponent
+    HomeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

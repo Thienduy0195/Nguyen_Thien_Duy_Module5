@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6cdb5bd8-bcc0-4d33-bff5-db6f4703b0a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/_ss6_angular_form.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss7_service_and_router/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss7_service_and_router/.idea/_ss7_service_and_router.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss7_service_and_router/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss7_service_and_router/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss7_service_and_router/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss7_service_and_router/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/data/contractList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/data/customerList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/data/customerTypeList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/data/rentTypeList" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/data/serviceList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/data/serviceTypeList" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/interface/contract.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/interface/customer-type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/interface/customer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/interface/rent-type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/interface/service-type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/interface/service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/room-create/room-create.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/room-create/room-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/room-create/room-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/service-modal-create/create-room/create-room.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/service-modal-create/create-room/create-room.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/service-modal-create/create-room/create-room.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/services/contract.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/services/customer.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/services/facility.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/assets/data/contractList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/assets/data/customerList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/assets/data/customerTypeList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/assets/data/rentTypeList" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/assets/data/serviceList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/assets/data/serviceTypeList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/contract-list/contract-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/contract-list/contract-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/contract-list/contract-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/contract-list/contract-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/service-modal-create/service-modal-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/app/service-modal-create/service-modal-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../_ss97_case_study_module5/angular-case-study/src/environments/environment.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2CN1235UW5XuZ64Lr0DLlT2nOxM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="ts.external.directory.path" value="D:\CG_FULL_STACK\CG_MODULE_5\_ss6_angular_form\excercise\login-form\node_modules\typescript\lib" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cdb5bd8-bcc0-4d33-bff5-db6f4703b0a1" name="Default Changelist" comment="" />
+      <created>1658628017685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658628017685</updated>
+      <workItem from="1658628018985" duration="11000" />
+      <workItem from="1658694320652" duration="783000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1658628028658">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1658628028658" />
+  </component>
+</project>

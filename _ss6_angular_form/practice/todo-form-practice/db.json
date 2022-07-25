@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "Study",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "content": "Sport",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "content": "Love",
+      "complete": false
+    },
+    {
+      "content": "Word hard",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "content": "Time for family",
+      "complete": false,
+      "id": 5
+    }
+  ]
+}
