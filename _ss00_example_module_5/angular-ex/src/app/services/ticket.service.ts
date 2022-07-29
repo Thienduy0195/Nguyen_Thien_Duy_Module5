@@ -36,14 +36,13 @@ export class TicketService {
     return this.httpClient.delete<Ticket>(`${this.URL_TICKET_API}/delete/${id}`);
   }
 
-
 //BD JSON ----
   getAllTicket(): Observable<Ticket[]> {
     return this.httpClient.get<Ticket[]>(this.URL_TICKET);
   }
 
-  save(product: Ticket): Observable<void> {
-    return this.httpClient.post<void>(this.URL_TICKET, product);
+  save(ticket: Ticket): Observable<void> {
+    return this.httpClient.post<void>(this.URL_TICKET, ticket);
   }
 
   update(product: Ticket): Observable<void> {

@@ -33,7 +33,7 @@
           <label for="catalog-add">Company: </label>
           <select name="catalog" formControlName="company" [compareWith]="compareByObjectId" class="form-control" id="catalog-add">
             <option value="">-----Please choose-----</option>
-            <option *ngFor="let catalog of companyList" [ngValue]="catalog">{{catalog.name}}</option>
+            <option *ngFor="let company of companyList" [ngValue]="company">{{company.name}}</option>
           </select>
           <div class="text-danger"
                *ngIf="formTicket.controls.company.invalid

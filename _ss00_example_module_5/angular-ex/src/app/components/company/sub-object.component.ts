@@ -3,7 +3,6 @@ import {FormControl, FormGroup} from "@angular/forms";
 import {Title} from "@angular/platform-browser";
 import {CompanyService} from "../../services/company.service";
 import {Company} from "../../models/Company";
-import {subscribeOn} from "rxjs/operators";
 
 @Component({
   selector: 'app-sub-object',
@@ -12,7 +11,7 @@ import {subscribeOn} from "rxjs/operators";
 })
 export class SubObjectComponent implements OnInit {
 
-
+  page = 1;
   companyList: Company [];
   searchForm: FormGroup = new FormGroup({
     name: new FormControl()

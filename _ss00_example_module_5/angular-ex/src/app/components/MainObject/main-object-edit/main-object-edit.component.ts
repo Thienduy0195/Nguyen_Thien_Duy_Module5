@@ -89,7 +89,6 @@ export class MainObjectEditComponent implements OnInit {
   //   });
   // }
 
-
   showSuccess() {
     this.toastr.success('Update object successfully!', 'SUCCESSFULLY!');
   }

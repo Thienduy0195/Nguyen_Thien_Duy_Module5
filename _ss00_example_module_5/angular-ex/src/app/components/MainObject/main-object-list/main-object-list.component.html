@@ -1,38 +1,47 @@
-
 <div style="width: 100%" class="col-md-12">
   <div class="container font-italic text-center">
     <h1 class="">--- TICKET MANAGEMENT ---</h1>
   </div>
   <div class="container d-flex mb-3">
-    <div class="search row-cols-1 col-md-6 row-col-sm-6 second-sub-nav p-0">
+    <div class="search row-cols-1 col-md-3 row-col-sm-6 second-sub-nav p-0">
       <div class="form-inline">
-<!--        <label for="searchStartDes" class="text-left col-md-5 mr-1 font-weight-bold text-success">START DESTINATION:</label>-->
-        <input #start type="text" id="searchStartDes" class="col-md-5 form-control border-secondary" (keydown.enter)="searchStartDestination(start.value)"
+        <label for="searchStartDes" class="mr-1 font-weight-bold">
+          <i class="fa-solid fa-flag-checkered"></i>
+        </label>
+        <input type="text" id="searchStartDes" class="form-control border-secondary"
                placeholder="Enter start destination...">
       </div>
     </div>
-    <div class="search row-cols-1 col-md-6 row-col-sm-6 second-sub-nav p-0">
+    <div class="search row-cols-1 col-md-3 second-sub-nav p-0">
       <div class="form-inline">
-<!--        <label for="searchEndDes" class="text-left col-md-5 mr-1 font-weight-bold  text-success">END DESTINATION:</label>-->
-        <input #end type="text" id="searchEndDes" class="col-md-5 form-control border-secondary" (keydown.enter)="searchEndDestination(end.value)"
+        <label for="searchEndDes" class="mr-1 font-weight-bold">
+          <i class="fa-solid fa-location-dot"></i>
+        </label>
+        <input type="text" id="searchEndDes" class="form-control border-secondary"
                placeholder="Enter end destination...">
       </div>
     </div>
-  </div>
-  <div class="container d-flex mb-3">
-    <div class="search row-cols-1 col-md-6 row-col-sm-6 second-sub-nav p-0 text-left">
+    <div class="search row-cols-1 col-md-2 row-col-sm-6 second-sub-nav mr-2 p-0 text-left">
       <div class="form-inline">
-<!--        <label for="searchStartDes" class="col-md-5 mr-1 font-weight-bold text-success">START DATE:</label>-->
-        <input #start type="date" id="searchStartDate" class="col-md-5 form-control border-secondary" (keydown.enter)="searchStartDestination(start.value)"
+        <label for="searchStartDate" class="mr-1 font-weight-bold">
+          <i class="fa-solid fa-hourglass-start"></i>
+        </label>
+        <input type="date" id="searchStartDate" class="form-control border-secondary"
                placeholder="Enter start destination...">
       </div>
     </div>
-    <div class="search row-cols-1 col-md-6 row-col-sm-6 second-sub-nav p-0">
+    <div class="search row-cols-1 col-md-2 row-col-sm-6 second-sub-nav p-0 mr-2">
       <div class="form-inline text-left">
-<!--        <label for="searchEndDes" class="col-md-5 mr-1 font-weight-bold  text-success">END DATE:</label>-->
-        <input #end type="date" id="searchEndDate" class="col-md-5 form-control border-secondary" (keydown.enter)="searchEndDestination(end.value)"
+        <label for="searchEndDes" class="mr-1 font-weight-bold">
+          <i class="fa-solid fa-hourglass-end"></i>
+        </label>
+        <input type="date" id="searchEndDate" class="form-control border-secondary"
                placeholder="Enter end destination...">
       </div>
+    </div>
+    <div class="col-md-1 form-inline">
+      <button class="btn btn-success" (click)="search()">
+        <i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
   </div>
   <div class="container" style="clear: both">
@@ -68,7 +77,8 @@
              data-toggle="modal" data-target="#bookingModal">BOOK</a>
         </td>
         <td>
-          <a class="btn btn-outline-warning w-50 btn-sm ml-1 mr-1" routerLink="/ticket/edit/{{item.id}}" (click)="getTicketId(item.id)">
+          <a class="btn btn-outline-warning w-50 btn-sm ml-1 mr-1" routerLink="/ticket/edit/{{item.id}}"
+             (click)="getTicketId(item.id)">
             <i class="fa-solid fa-pen-to-square"></i>
           </a>
         </td>
