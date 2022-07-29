@@ -9,7 +9,7 @@ public class Ticket {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String price;
-    private String starDes;
+    private String startDes;
     private String endDes;
     private String startDate;
     private String startHour;
@@ -23,10 +23,10 @@ public class Ticket {
     public Ticket() {
     }
 
-    public Ticket(Integer id, String price, String starDes, String endDes, String startDate, String startHour, String amount, Company company) {
+    public Ticket(Integer id, String price, String startDes, String endDes, String startDate, String startHour, String amount, Company company) {
         this.id = id;
         this.price = price;
-        this.starDes = starDes;
+        this.startDes = startDes;
         this.endDes = endDes;
         this.startDate = startDate;
         this.startHour = startHour;
@@ -50,12 +50,12 @@ public class Ticket {
         this.price = price;
     }
 
-    public String getStarDes() {
-        return starDes;
+    public String getStartDes() {
+        return startDes;
     }
 
-    public void setStarDes(String starDes) {
-        this.starDes = starDes;
+    public void setStartDes(String starDes) {
+        this.startDes = starDes;
     }
 
     public String getEndDes() {

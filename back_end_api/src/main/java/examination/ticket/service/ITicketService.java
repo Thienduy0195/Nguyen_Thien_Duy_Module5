@@ -19,6 +19,7 @@ public interface ITicketService {
 
     List<Ticket> findAll();
 
+    Page<Ticket> search (Pageable pageable, String startDes, String endDes, String startDate);
 
     Page<Ticket> findAllPageable(Pageable pageable);
 }

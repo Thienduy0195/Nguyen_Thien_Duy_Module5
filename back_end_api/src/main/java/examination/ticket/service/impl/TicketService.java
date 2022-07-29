@@ -43,7 +43,14 @@ public class TicketService implements ITicketService {
     }
 
     @Override
+    public Page<Ticket> search(Pageable pageable, String startDes, String endDes, String startDate) {
+        return null;
+    }
+
+    @Override
     public Page<Ticket> findAllPageable(Pageable pageable) {
         return this.iTicketRepository.findAll(pageable);
     }
+
+
 }

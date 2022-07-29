@@ -66,44 +66,31 @@ export class MainObjectListComponent implements OnInit {
     this.toastr.success('Welcome to ticket Management!', 'WELCOME!!');
   }
 
-
-  searchStartDestination(s: string) {
-    console.log(s);
-    this.ticketService.searchStartDes(s).subscribe(value => {
-      this.ticketList = value;
-      if (value.length == 0) {
-        this.notFoundSearch()
-      }
-      this.page = 1;
-    }, error => {
-      this.ticketList = null;
-    });
-  }
-
   getTicketId(id: number) {
     this.idTicket = id;
-    this.ticketService.find(id).subscribe(ticket => {
+    console.log(this.idTicket)
+    this.ticketService.findByIdApi(id).subscribe(ticket => {
       this.ticket = ticket;
-        this.checkTicket = true;
-        this.startDes = this.ticket.startDes;
-        this.endDes = this.ticket.endDes;
-        this.startDate = this.ticket.startDate;
-        this.startHour = this.ticket.startHour;
+      console.log(ticket)
+      this.startDes = this.ticket.startDes;
+      this.endDes = this.ticket.endDes;
+      this.startDate = this.ticket.startDate;
+      this.startHour = this.ticket.startHour;
       console.log(this.checkTicket)
     })
   }
 
   bookingTicket() {
-    if(this.ticket.amount>0){
+    if (this.ticket.amount > 0) {
       this.ticket.amount -= 1;
-      this.ticketService.update(this.ticket).subscribe(() => {
+      this.ticketService.updateTicketApi(this.idTicket, this.ticket).subscribe(() => {
         this.showSuccess();
         this.getAllTicket();
       });
       setTimeout(() => {
         this.router.navigateByUrl('/list');
       }, 1000);
-    }else {
+    } else {
       this.toastr.error("The ticket is exhausted!", 'EXHAUSTED!!')
       this.router.navigateByUrl('/list');
     }
@@ -120,5 +107,28 @@ export class MainObjectListComponent implements OnInit {
     }, error => {
       this.ticketList = null;
     });
+  }
+
+  searchStartDestination(s: string) {
+    console.log(s);
+    this.ticketService.searchStartDes(s).subscribe(value => {
+      this.ticketList = value;
+      if (value.length == 0) {
+        this.notFoundSearch()
+      }
+      this.page = 1;
+    }, error => {
+      this.ticketList = null;
+    });
+  }
+
+  deleteTicket() {
+    this.ticketService.deleteTicketApi(this.idTicket).subscribe(result => {
+      this.getAllTicket();
+      this.toastr.warning("Deleting ticket successfully!", "DELETING")
+    }, error => {
+      this.toastr.error("Deleting fail!", "DELETING")
+    })
+
   }
 }

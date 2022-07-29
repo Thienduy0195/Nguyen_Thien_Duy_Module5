@@ -24,6 +24,19 @@ export class TicketService {
     return this.httpClient.post<void>(this.URL_TICKET_API + '/create', ticket);
   }
 
+  public updateTicketApi(id: number, ticket: Ticket): Observable<void> {
+    return this.httpClient.patch<void>(`${this.URL_TICKET_API}/update/${id}`, ticket);
+  }
+
+  public findByIdApi(id: number): Observable<Ticket> {
+    return this.httpClient.get<Ticket>(`${this.URL_TICKET_API}/${id}`);
+  }
+
+  public deleteTicketApi(id: number): Observable<Ticket> {
+    return this.httpClient.delete<Ticket>(`${this.URL_TICKET_API}/delete/${id}`);
+  }
+
+
 //BD JSON ----
   getAllTicket(): Observable<Ticket[]> {
     return this.httpClient.get<Ticket[]>(this.URL_TICKET);

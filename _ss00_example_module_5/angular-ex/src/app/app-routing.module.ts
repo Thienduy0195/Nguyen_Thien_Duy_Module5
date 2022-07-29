@@ -21,7 +21,7 @@ const routes: Routes = [{
     component: MainObjectCreateComponent
   },
   {
-    path: 'object/edit/:id',
+    path: 'ticket/edit/:id',
     component: MainObjectEditComponent
   },
   {

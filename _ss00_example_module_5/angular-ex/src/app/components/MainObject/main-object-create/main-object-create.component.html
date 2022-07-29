@@ -12,7 +12,7 @@
                *ngIf="formTicket.controls.startDes.invalid
                      && (formTicket.controls.startDes.touched || formTicket.controls.startDes.dirty)">
             <p class="m-0" *ngIf="formTicket.controls.startDes.hasError('required')">
-              Please input startDes!
+              Please input start destination!
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@
                *ngIf="formTicket.controls.endDes.invalid
                      && (formTicket.controls.endDes.touched || formTicket.controls.endDes.dirty)">
             <p class="m-0" *ngIf="formTicket.controls.endDes.hasError('required')">
-              Please input amount product!
+              Please input end destination!
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@
                *ngIf="formTicket.controls.company.invalid
                      && (formTicket.controls.company.touched || formTicket.controls.company.dirty)">
             <p class="m-0" *ngIf="formTicket.controls.company.hasError('required')">
-              Please choose Vehicle Company!
+              Please choose vehicle Company!
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@
                *ngIf="formTicket.controls.startDate.invalid
                      && (formTicket.controls.startDate.touched || formTicket.controls.startDate.dirty)">
             <p class="m-0" *ngIf="formTicket.controls.startDate.hasError('required')">
-              Please input startDate
+              Please input start date!
             </p>
           </div>
           <div class="text-danger"
@@ -70,7 +70,7 @@
                *ngIf="formTicket.controls.startHour.invalid
                      && (formTicket.controls.startHour.touched || formTicket.controls.startHour.dirty)">
             <p class="m-0" *ngIf="formTicket.controls.startHour.hasError('required')">
-              Please input startHour
+              Please input start hour!
             </p>
           </div>
         </div>
@@ -115,8 +115,8 @@
           </div>
         </div>
       </div>
-      <div>
-        <button type="button" class="btn btn-primary" [disabled]="formTicket.invalid" (click)="addNewTicket()"
+      <div class="text-right">
+        <button type="button" class="btn btn-light" [disabled]="formTicket.invalid" (click)="addNewTicket()"
                 data-dismiss="modal">Save
         </button>
       </div>

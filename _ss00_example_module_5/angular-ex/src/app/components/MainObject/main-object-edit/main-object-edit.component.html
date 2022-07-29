@@ -1,38 +1,76 @@
-<div class="container-fluid d-flex" >
+<div class="container-fluid d-flex">
   <div class="col-3"></div>
   <div class="col-6 ">
-    <form [formGroup]="formProduct" autocomplete="off">
-      <div class="form-group row col-12">
-        <label for="name-add">Name Product: </label>
-        <input type="text" formControlName="name" id="name-add" class="form-control"
-               placeholder="Input name product!"
-               aria-describedby="helpNameId">
-        <div class="text-danger"
-             *ngIf="formProduct.controls.name.invalid
-                     && (formProduct.controls.name.touched || formProduct.controls.name.dirty)">
-          <p class="m-0" *ngIf="formProduct.controls.name.hasError('required')">
-            Please input name service!
-          </p>
-        </div>
-      </div>
+    <form [formGroup]="formTicket" autocomplete="off" class="">
       <div class="form-group row col-12">
         <div class="col-6 p-0 pr-1">
-          <label for="price-add">Price: </label>
-          <input type="number" formControlName="price" id="price-add" class="form-control"
-                 placeholder="Input price product!"
+          <label for="price-add">Start Destination: </label>
+          <input type="text" formControlName="startDes" id="price-add" class="form-control"
+                 placeholder="Please enter start destination"
                  aria-describedby="helpAreaId">
           <div class="text-danger"
-               *ngIf="formProduct.controls.price.invalid
-                     && (formProduct.controls.price.touched || formProduct.controls.price.dirty)">
-            <p class="m-0" *ngIf="formProduct.controls.price.hasError('required')">
-              Please input area facility!
+               *ngIf="formTicket.controls.startDes.invalid
+                     && (formTicket.controls.startDes.touched || formTicket.controls.startDes.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.startDes.hasError('required')">
+              Please input startDes!
+            </p>
+          </div>
+        </div>
+        <div class="col-6 p-0 pl-1">
+          <label>End Destination: </label>
+          <input type="text" formControlName="endDes" class="form-control"
+                 placeholder="Please enter end destination"
+                 aria-describedby="helpCostId">
+          <div class="text-danger"
+               *ngIf="formTicket.controls.endDes.invalid
+                     && (formTicket.controls.endDes.touched || formTicket.controls.endDes.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.endDes.hasError('required')">
+              Please input amount product!
+            </p>
+          </div>
+        </div>
+        <div class="form-group row col-12">
+          <label for="catalog-add">Company: </label>
+          <select name="catalog" formControlName="company" [compareWith]="compareByObjectId" class="form-control" id="catalog-add">
+            <option value="">-----Please choose-----</option>
+            <option *ngFor="let catalog of companyList" [ngValue]="catalog">{{catalog.name}}</option>
+          </select>
+          <div class="text-danger"
+               *ngIf="formTicket.controls.company.invalid
+                     && (formTicket.controls.company.touched || formTicket.controls.company.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.company.hasError('required')">
+              Please choose Vehicle Company!
+            </p>
+          </div>
+        </div>
+        <div class="form-group row col-12">
+          <label for="name-add">Start date: </label>
+          <input type="date" formControlName="startDate" id="name-add" class="form-control"
+                 placeholder="Input name product!"
+                 aria-describedby="helpNameId">
+          <div class="text-danger"
+               *ngIf="formTicket.controls.startDate.invalid
+                     && (formTicket.controls.startDate.touched || formTicket.controls.startDate.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.startDate.hasError('required')">
+              Please input startDate
             </p>
           </div>
           <div class="text-danger"
-               *ngIf="formProduct.controls.price.invalid
-                     && (formProduct.controls.price.touched || formProduct.controls.price.dirty)">
-            <p class="m-0" *ngIf="formProduct.controls.price.hasError('min')">
-              Please input price product bigger than 0!
+               *ngIf="formTicket.controls.startDate.invalid
+                     && (formTicket.controls.startDate.touched || formTicket.controls.startDate.dirty)">
+            <p *ngIf="formTicket.get('startDate').dirty && formTicket.hasError('notValid', 'startDate')">The start date must be after current date!</p>
+          </div>
+        </div>
+        <div class="form-group row col-12">
+          <label for="startHour">Start hour: </label>
+          <input type="time" formControlName="startHour" id="startHour" class="form-control"
+                 placeholder="Input name product!"
+                 aria-describedby="helpNameId">
+          <div class="text-danger"
+               *ngIf="formTicket.controls.startHour.invalid
+                     && (formTicket.controls.startHour.touched || formTicket.controls.startHour.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.startHour.hasError('required')">
+              Please input startHour
             </p>
           </div>
         </div>
@@ -42,63 +80,43 @@
                  placeholder="Input amount product!"
                  aria-describedby="helpCostId">
           <div class="text-danger"
-               *ngIf="formProduct.controls.amount.invalid
-                     && (formProduct.controls.amount.touched || formProduct.controls.amount.dirty)">
-            <p class="m-0" *ngIf="formProduct.controls.amount.hasError('required')">
-              Please input amount product!
+               *ngIf="formTicket.controls.amount.invalid
+                     && (formTicket.controls.amount.touched || formTicket.controls.amount.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.amount.hasError('required')">
+              Please input amount ticket!
             </p>
           </div>
           <div class="text-danger"
-               *ngIf="formProduct.controls.amount.invalid
-                     && (formProduct.controls.amount.touched || formProduct.controls.amount.dirty)">
-            <p class="m-0" *ngIf="formProduct.controls.amount.hasError('min')">
-              Please input amount product bigger than zero!
+               *ngIf="formTicket.controls.amount.invalid
+                     && (formTicket.controls.amount.touched || formTicket.controls.amount.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.amount.hasError('min')">
+              Please input amount bigger than zero!
+            </p>
+          </div>
+        </div>
+        <div class="col-6 p-0 pl-1">
+          <label for="price">Price: </label>
+          <input type="number" formControlName="price" id="price" class="form-control"
+                 placeholder="Input amount product!"
+                 aria-describedby="helpCostId">
+          <div class="text-danger"
+               *ngIf="formTicket.controls.price.invalid
+                     && (formTicket.controls.price.touched || formTicket.controls.price.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.price.hasError('required')">
+              Please input price!
+            </p>
+          </div>
+          <div class="text-danger"
+               *ngIf="formTicket.controls.price.invalid
+                     && (formTicket.controls.price.touched || formTicket.controls.price.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.price.hasError('min')">
+              Please input price bigger than zero!
             </p>
           </div>
         </div>
       </div>
-      <div class="form-group row col-12">
-        <label for="description-add">Description: </label>
-        <input type="text" formControlName="description" id="description-add" class="form-control"
-               placeholder="Input description product!"
-               aria-describedby="helpAmountId">
-        <div class="text-danger"
-             *ngIf="formProduct.controls.description.invalid
-                     && (formProduct.controls.description.touched || formProduct.controls.description.dirty)">
-          <p class="m-0" *ngIf="formProduct.controls.description.hasError('required')">
-            Please input description for product!
-          </p>
-        </div>
-      </div>
-      <div class="form-group row col-12">
-        <label for="status-add">Status: </label>
-        <input type="text" formControlName="status" id="status-add" class="form-control"
-               placeholder="Input status product!"
-               aria-describedby="helpStatusId">
-        <div class="text-danger"
-             *ngIf="formProduct.controls.status.invalid
-                     && (formProduct.controls.status.touched || formProduct.controls.status.dirty)">
-          <p class="m-0" *ngIf="formProduct.controls.status.hasError('required')">
-            Please input status for product!
-          </p>
-        </div>
-      </div>
-      <div class="form-group row col-12">
-        <label for="catalog-add">Catalog: </label>
-        <select name="catalog" formControlName="subObject" [compareWith]="compareByObjectId" class="form-control" id="catalog-add">
-          <option value="">-----Please choose-----</option>
-          <option *ngFor="let catalog of subObjectList" [ngValue]="catalog">{{catalog.name}}</option>
-        </select>
-        <div class="text-danger"
-             *ngIf="formProduct.controls.subObject.invalid
-                     && (formProduct.controls.subObject.touched || formProduct.controls.subObject.dirty)">
-          <p class="m-0" *ngIf="formProduct.controls.subObject.hasError('required')">
-            Please choose subObject of product!
-          </p>
-        </div>
-      </div>
-      <div>
-        <button type="button" class="btn btn-primary" [disabled]="formProduct.invalid" (click)="updateObject()"
+      <div class="text-right">
+        <button type="button" class="btn btn-light" [disabled]="formTicket.invalid" (click)="updateTicket()"
                 data-dismiss="modal">Save
         </button>
       </div>

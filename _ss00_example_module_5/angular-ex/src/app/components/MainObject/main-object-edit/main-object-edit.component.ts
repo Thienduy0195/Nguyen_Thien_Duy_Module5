@@ -5,7 +5,7 @@ import {ToastrService} from "ngx-toastr";
 import {Title} from "@angular/platform-browser";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Company} from "../../../models/company";
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Ticket} from "../../../models/ticket";
 
 @Component({
@@ -14,17 +14,18 @@ import {Ticket} from "../../../models/ticket";
   styleUrls: ['./main-object-edit.component.css']
 })
 export class MainObjectEditComponent implements OnInit {
-  subObjectList: Company[];
+  companyList: Company[];
   id: number;
-  mainObject: Ticket | undefined;
-  formProduct: FormGroup = new FormGroup({
+  ticket: Ticket | undefined;
+  formTicket: FormGroup = new FormGroup({
     id: new FormControl(),
-    name: new FormControl('', [Validators.required]),
-    price: new FormControl(0, [Validators.required, Validators.min(0)]),
-    description: new FormControl('', [Validators.required]),
-    amount: new FormControl(0, [Validators.required, Validators.min(0)]),
-    status: new FormControl('', [Validators.required]),
-    subObject: new FormControl('', [Validators.required])
+    price: new FormControl(0, [Validators.min(0)]),
+    startDes: new FormControl('', [Validators.required]),
+    endDes: new FormControl('', [Validators.required]),
+    startDate: new FormControl('', [Validators.required, this.checkStartDay]),
+    startHour: new FormControl('', [Validators.required]),
+    company: new FormControl(null, [Validators.required]),
+    amount: new FormControl(0, [Validators.required, Validators.required, Validators.min(0)]),
   });
 
   compareByObjectId(itemOne, itemTwo) {
@@ -42,34 +43,51 @@ export class MainObjectEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAllCompany();
+    this.getAllCompany(); //GET FROM API
     this.id = Number(this.activatedRoute.snapshot.params.id);
-    this.productService.find(this.id).subscribe(value => {
+    this.productService.findByIdApi(this.id).subscribe(value => {
       console.log(value)
       if (value === undefined) {
         this.router.navigate(['/error']);
       }
-      this.formProduct.patchValue(value);
+      this.formTicket.patchValue(value);
     });
   }
 
 
   getAllCompany() {
-    this.catalogService.getAllCompany().subscribe(value => {
-      this.subObjectList = value;
+    this.catalogService.getAllCompanyApi().subscribe(value => {
+      this.companyList = value;
       console.log(value)
     });
   }
 
-  updateObject() {
-    this.mainObject = this.formProduct.value
-    this.productService.update(this.mainObject).subscribe(() => {
+  updateTicket() {
+    this.ticket = this.formTicket.value
+    console.log(this.ticket)
+    this.productService.updateTicketApi(this.id, this.ticket).subscribe(() => {
       this.router.navigate(['/list']);
       this.showSuccess();
     }, e => {
-      console.log('error at update');
+      this.toastr.error("ERROR")
     });
   }
+
+  checkStartDay(a: AbstractControl): any {
+    const day = a.value.substring(8, 10);
+    const currentDay = new Date().getDate();
+    return day - currentDay >= 1 ? null : {notValid: true};
+  }
+
+  // updateObject() {
+  //   this.mainObject = this.formProduct.value
+  //   this.productService.update(this.mainObject).subscribe(() => {
+  //     this.router.navigate(['/list']);
+  //     this.showSuccess();
+  //   }, e => {
+  //     console.log('error at update');
+  //   });
+  // }
 
 
   showSuccess() {

@@ -59,11 +59,12 @@ public class TicketRestController {
     }
 
     @PatchMapping(value = "update/{id}")
-    public ResponseEntity<Map<String, String>> updateCustomer(@PathVariable("id") Integer id,
-                                                              @Validated @RequestBody Ticket ticket) {
+    public ResponseEntity<Map<String, String>> updateTicket(@PathVariable("id") Integer id,
+                                                            @Validated @RequestBody Ticket ticket) {
         Company company = new Company();
         company.setId(ticket.getCompany().getId());
         company.setName(ticket.getCompany().getName());
+        System.out.println(company);
         ticket.setId(id);
         ticket.setCompany(company);
         this.iTicketService.save(ticket);

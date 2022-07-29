@@ -55,9 +55,7 @@ export class MainObjectCreateComponent implements OnInit {
     console.log(ticket)
     this.ticketService.saveTicketApi(ticket).subscribe(value => {
       this.showSuccess();
-      setTimeout(() => {
-        this.router.navigateByUrl('/list');
-      }, 1000);
+      this.router.navigateByUrl('/list');
     });
   }
 
@@ -70,7 +68,6 @@ export class MainObjectCreateComponent implements OnInit {
   //     }, 1000);
   //   });
   // }
-
 
 
   checkStartDay(a: AbstractControl): any {
