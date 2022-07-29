@@ -36,6 +36,11 @@ export class TicketService {
     return this.httpClient.delete<Ticket>(`${this.URL_TICKET_API}/delete/${id}`);
   }
 
+  public search(startDes: string, endDes: string, startDate: string, endDate: string): Observable<Ticket[]> {
+    return this.httpClient.get<Ticket[]>
+    (`${this.URL_TICKET_API}/tickets/search/${startDes}&${endDes}&${startDate}&${endDate}`);
+  }
+
 //BD JSON ----
   getAllTicket(): Observable<Ticket[]> {
     return this.httpClient.get<Ticket[]>(this.URL_TICKET);

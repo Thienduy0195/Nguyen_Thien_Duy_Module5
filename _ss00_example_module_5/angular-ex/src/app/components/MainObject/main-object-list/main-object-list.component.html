@@ -8,7 +8,7 @@
         <label for="searchStartDes" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-flag-checkered"></i>
         </label>
-        <input type="text" id="searchStartDes" class="form-control border-secondary"
+        <input [(ngModel)]="startDes" type="text" id="searchStartDes" class="form-control border-secondary"
                placeholder="Enter start destination...">
       </div>
     </div>
@@ -17,7 +17,7 @@
         <label for="searchEndDes" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-location-dot"></i>
         </label>
-        <input type="text" id="searchEndDes" class="form-control border-secondary"
+        <input [(ngModel)]="endDes" type="text" id="searchEndDes" class="form-control border-secondary"
                placeholder="Enter end destination...">
       </div>
     </div>
@@ -26,7 +26,7 @@
         <label for="searchStartDate" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-hourglass-start"></i>
         </label>
-        <input type="date" id="searchStartDate" class="form-control border-secondary"
+        <input [(ngModel)]="startDate" type="date" id="searchStartDate" class="form-control border-secondary"
                placeholder="Enter start destination...">
       </div>
     </div>
@@ -35,7 +35,7 @@
         <label for="searchEndDes" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-hourglass-end"></i>
         </label>
-        <input type="date" id="searchEndDate" class="form-control border-secondary"
+        <input [(ngModel)]="endDate" type="date" id="searchEndDate" class="form-control border-secondary"
                placeholder="Enter end destination...">
       </div>
     </div>

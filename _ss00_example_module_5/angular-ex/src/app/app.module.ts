@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SubObjectComponent } from './components/company/sub-object.component';
 import { ErrorComponent } from './components/error/error.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgxPaginationModule} from "ngx-pagination";
 import { HomeComponent } from './components/home/home.component';
 import {HttpClientModule} from "@angular/common/http";
@@ -29,21 +29,22 @@ import {ToastrModule} from "ngx-toastr";
     MainObjectCreateComponent,
     MainObjectEditComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    NgxPaginationModule,
-    HttpClientModule,
-    NgxPaginationModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot({
-      timeOut: 3000,
-      closeButton: true,
-      progressBar: true,
-      positionClass: 'toast-bottom-right',
-    }),
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        NgxPaginationModule,
+        HttpClientModule,
+        NgxPaginationModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot({
+            timeOut: 3000,
+            closeButton: true,
+            progressBar: true,
+            positionClass: 'toast-bottom-right',
+        }),
+        FormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

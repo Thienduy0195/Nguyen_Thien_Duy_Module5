@@ -21,6 +21,7 @@
         startDes: string;
         endDes: string;
         startDate: string;
+        endDate: string;
         startHour: string;
         checkTicket = true;
         ticketList: Ticket[];
@@ -105,6 +106,20 @@
         }
 
         search() {
-
+          if (this.startDate === '') {
+            this.startDate = '2000-01-01';
+          }
+          if (this.endDate === '') {
+            this.endDate = '2200-01-01';
+          }
+          this.ticketService.search(this.startDes, this.endDes,
+            this.startDate, this.endDate).subscribe((tickets: any) => {
+            if (tickets != null) {
+              this.ticketList = tickets.content;
+            } else {
+              this.ticketList = [];
+            }
+            this.page = 1;
+          });
         }
       }

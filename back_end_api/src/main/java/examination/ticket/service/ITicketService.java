@@ -19,7 +19,7 @@ public interface ITicketService {
 
     List<Ticket> findAll();
 
-    Page<Ticket> search (Pageable pageable, String startDes, String endDes, String startDate);
+    Page<Ticket> search(String startDes, String endDes, String startDate, String endDate, Pageable pageble);
 
     Page<Ticket> findAllPageable(Pageable pageable);
 }
