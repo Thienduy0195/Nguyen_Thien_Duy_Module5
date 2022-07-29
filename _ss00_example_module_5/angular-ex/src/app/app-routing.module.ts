@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {SubObjectComponent} from "./components/sub-object/sub-object.component";
+import {SubObjectComponent} from "./components/company/sub-object.component";
 import {HomeComponent} from "./components/home/home.component";
 import {ErrorComponent} from "./components/error/error.component";
 import {MainObjectListComponent} from "./components/MainObject/main-object-list/main-object-list.component";

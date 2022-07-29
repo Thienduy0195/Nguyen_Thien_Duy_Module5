@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SubObjectComponent } from './components/sub-object/sub-object.component';
+import { SubObjectComponent } from './components/company/sub-object.component';
 import { ErrorComponent } from './components/error/error.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgxPaginationModule} from "ngx-pagination";

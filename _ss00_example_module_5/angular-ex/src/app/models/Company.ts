@@ -1,4 +1,4 @@
-export interface SubObject {
+export interface Company {
   id: number;
   name: string;
 }

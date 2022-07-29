@@ -1,12 +1,12 @@
-import {SubObject} from "./sub-object";
+import {Company} from "./company";
 
-export interface MainObject {
+export interface Ticket {
   id?: number;
   price: number;
   startDes: string;
   endDes: string;
   startDate: string;
   startHour: string;
-  subObject: SubObject;
+  company: Company;
   amount: number;
 }

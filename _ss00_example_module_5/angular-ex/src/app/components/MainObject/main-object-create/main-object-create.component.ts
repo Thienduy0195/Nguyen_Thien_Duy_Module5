@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {MainObjectService} from "../../../services/main-object.service";
-import {SubObjectService} from "../../../services/sub-object.service";
+import {TicketService} from "../../../services/ticket.service";
+import {CompanyService} from "../../../services/company.service";
 import {Router} from "@angular/router";
-import {SubObject} from "../../../models/sub-object";
+import {Company} from "../../../models/company";
 import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Title} from "@angular/platform-browser";
 import {ToastrService} from "ngx-toastr";
@@ -13,7 +13,7 @@ import {ToastrService} from "ngx-toastr";
   styleUrls: ['./main-object-create.component.css']
 })
 export class MainObjectCreateComponent implements OnInit {
-  companies: SubObject[];
+  companyList: Company[];
 
   formTicket: FormGroup = new FormGroup({
     id: new FormControl(),
@@ -22,12 +22,12 @@ export class MainObjectCreateComponent implements OnInit {
     endDes: new FormControl('', [Validators.required]),
     startDate: new FormControl('', [Validators.required, this.checkStartDay]),
     startHour: new FormControl('', [Validators.required]),
-    subObject: new FormControl(null, [Validators.required]),
+    company: new FormControl(null, [Validators.required]),
     amount: new FormControl(0, [Validators.required, Validators.required, Validators.min(0)]),
   });
 
-  constructor(private ticketService: MainObjectService,
-              private companyService: SubObjectService,
+  constructor(private ticketService: TicketService,
+              private companyService: CompanyService,
               private toastr: ToastrService,
               private title: Title,
               private router: Router) {
@@ -39,25 +39,39 @@ export class MainObjectCreateComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAllSubObject();
+    this.getAllCompany();
   }
 
-  getAllSubObject() {
-    this.companyService.getAllCompany().subscribe(value => {
-      this.companies = value;
+  getAllCompany() {
+    this.companyService.getAllCompanyApi().subscribe(value => {
+      // @ts-ignore
+      this.companyList = value;
       console.log(value)
     });
   }
 
   addNewTicket() {
-    const mainObject = this.formTicket.value
-    this.ticketService.save(mainObject).subscribe(value => {
+    const ticket = this.formTicket.value
+    console.log(ticket)
+    this.ticketService.saveTicketApi(ticket).subscribe(value => {
       this.showSuccess();
       setTimeout(() => {
         this.router.navigateByUrl('/list');
       }, 1000);
     });
   }
+
+  // addNewTicket() {
+  //   const ticket = this.formTicket.value
+  //   this.ticketService.save(ticket).subscribe(value => {
+  //     this.showSuccess();
+  //     setTimeout(() => {
+  //       this.router.navigateByUrl('/list');
+  //     }, 1000);
+  //   });
+  // }
+
+
 
   checkStartDay(a: AbstractControl): any {
     const day = a.value.substring(8, 10);

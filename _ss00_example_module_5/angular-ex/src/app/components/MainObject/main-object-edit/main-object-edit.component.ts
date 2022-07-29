@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {MainObjectService} from "../../../services/main-object.service";
-import {SubObjectService} from "../../../services/sub-object.service";
+import {TicketService} from "../../../services/ticket.service";
+import {CompanyService} from "../../../services/company.service";
 import {ToastrService} from "ngx-toastr";
 import {Title} from "@angular/platform-browser";
 import {ActivatedRoute, Router} from "@angular/router";
-import {SubObject} from "../../../models/sub-object";
+import {Company} from "../../../models/company";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {MainObject} from "../../../models/main-object";
+import {Ticket} from "../../../models/ticket";
 
 @Component({
   selector: 'app-main-object-edit',
@@ -14,9 +14,9 @@ import {MainObject} from "../../../models/main-object";
   styleUrls: ['./main-object-edit.component.css']
 })
 export class MainObjectEditComponent implements OnInit {
-  subObjectList: SubObject[];
+  subObjectList: Company[];
   id: number;
-  mainObject: MainObject | undefined;
+  mainObject: Ticket | undefined;
   formProduct: FormGroup = new FormGroup({
     id: new FormControl(),
     name: new FormControl('', [Validators.required]),
@@ -32,8 +32,8 @@ export class MainObjectEditComponent implements OnInit {
     return itemOne && itemTwo && itemOne.id == itemTwo.id;
   }
 
-  constructor(private productService: MainObjectService,
-              private catalogService: SubObjectService,
+  constructor(private productService: TicketService,
+              private catalogService: CompanyService,
               private activatedRoute: ActivatedRoute,
               private toastr: ToastrService,
               private title: Title,
@@ -42,7 +42,7 @@ export class MainObjectEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAllSubObject();
+    this.getAllCompany();
     this.id = Number(this.activatedRoute.snapshot.params.id);
     this.productService.find(this.id).subscribe(value => {
       console.log(value)
@@ -54,7 +54,7 @@ export class MainObjectEditComponent implements OnInit {
   }
 
 
-  getAllSubObject() {
+  getAllCompany() {
     this.catalogService.getAllCompany().subscribe(value => {
       this.subObjectList = value;
       console.log(value)

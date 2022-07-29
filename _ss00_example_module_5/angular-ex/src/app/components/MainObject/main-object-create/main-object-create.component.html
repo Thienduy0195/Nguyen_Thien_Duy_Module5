@@ -31,15 +31,15 @@
         </div>
         <div class="form-group row col-12">
           <label for="catalog-add">Company: </label>
-          <select name="catalog" formControlName="subObject" class="form-control" id="catalog-add">
+          <select name="catalog" formControlName="company" class="form-control" id="catalog-add">
             <option value="">-----Please choose-----</option>
-            <option *ngFor="let catalog of companies" [ngValue]="catalog">{{catalog.name}}</option>
+            <option *ngFor="let catalog of companyList" [ngValue]="catalog">{{catalog.name}}</option>
           </select>
           <div class="text-danger"
-               *ngIf="formTicket.controls.subObject.invalid
-                     && (formTicket.controls.subObject.touched || formTicket.controls.subObject.dirty)">
-            <p class="m-0" *ngIf="formTicket.controls.subObject.hasError('required')">
-              Please choose Company!
+               *ngIf="formTicket.controls.company.invalid
+                     && (formTicket.controls.company.touched || formTicket.controls.company.dirty)">
+            <p class="m-0" *ngIf="formTicket.controls.company.hasError('required')">
+              Please choose Vehicle Company!
             </p>
           </div>
         </div>
