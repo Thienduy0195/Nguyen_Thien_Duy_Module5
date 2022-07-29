@@ -6,6 +6,7 @@ import {FacilityService} from "../../../services/facility.service";
 import {CustomerService} from "../../../services/customer.service";
 import {ContractService} from "../../../services/contract.service";
 import {Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-create-contract',
@@ -21,7 +22,8 @@ export class CreateContractComponent implements OnInit {
   constructor(private facilityService: FacilityService,
               private customerService: CustomerService,
               private contractService: ContractService,
-              private route: Router) {
+              private route: Router,
+              private toastr: ToastrService) {
     customerService.getCustomerList().subscribe(value => {
       this.customers = value;
     })
@@ -35,7 +37,7 @@ export class CreateContractComponent implements OnInit {
 
   ngOnInit(): void {
     this.contractForm = new FormGroup({
-      id: new FormControl(''),
+      id: new FormControl(0),
       customer: new FormControl(null, [Validators.required]),
       service: new FormControl(null, [Validators.required]),
       startDate: new FormControl('', [Validators.required, Validators.pattern('^\\d{4}-\\d{2}-\\d{2}$')]),
@@ -47,7 +49,7 @@ export class CreateContractComponent implements OnInit {
   onSubmit() {
     this.contractService.saveContract(this.contractForm.value);
     console.log(this.contractForm.value)
-    alert('success')
+    this.toastr.success("Add new contract successfully!")
     this.route.navigate(['/contract']);
   }
 }

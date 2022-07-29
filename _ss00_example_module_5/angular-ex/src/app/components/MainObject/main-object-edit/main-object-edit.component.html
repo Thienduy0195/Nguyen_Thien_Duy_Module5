@@ -1,0 +1,110 @@
+<div class="container-fluid d-flex" >
+  <div class="col-3"></div>
+  <div class="col-6 ">
+    <form [formGroup]="formProduct" autocomplete="off">
+      <div class="form-group row col-12">
+        <label for="name-add">Name Product: </label>
+        <input type="text" formControlName="name" id="name-add" class="form-control"
+               placeholder="Input name product!"
+               aria-describedby="helpNameId">
+        <div class="text-danger"
+             *ngIf="formProduct.controls.name.invalid
+                     && (formProduct.controls.name.touched || formProduct.controls.name.dirty)">
+          <p class="m-0" *ngIf="formProduct.controls.name.hasError('required')">
+            Please input name service!
+          </p>
+        </div>
+      </div>
+      <div class="form-group row col-12">
+        <div class="col-6 p-0 pr-1">
+          <label for="price-add">Price: </label>
+          <input type="number" formControlName="price" id="price-add" class="form-control"
+                 placeholder="Input price product!"
+                 aria-describedby="helpAreaId">
+          <div class="text-danger"
+               *ngIf="formProduct.controls.price.invalid
+                     && (formProduct.controls.price.touched || formProduct.controls.price.dirty)">
+            <p class="m-0" *ngIf="formProduct.controls.price.hasError('required')">
+              Please input area facility!
+            </p>
+          </div>
+          <div class="text-danger"
+               *ngIf="formProduct.controls.price.invalid
+                     && (formProduct.controls.price.touched || formProduct.controls.price.dirty)">
+            <p class="m-0" *ngIf="formProduct.controls.price.hasError('min')">
+              Please input price product bigger than 0!
+            </p>
+          </div>
+        </div>
+        <div class="col-6 p-0 pl-1">
+          <label for="chiPhi-add">Amount: </label>
+          <input type="number" formControlName="amount" id="chiPhi-add" class="form-control"
+                 placeholder="Input amount product!"
+                 aria-describedby="helpCostId">
+          <div class="text-danger"
+               *ngIf="formProduct.controls.amount.invalid
+                     && (formProduct.controls.amount.touched || formProduct.controls.amount.dirty)">
+            <p class="m-0" *ngIf="formProduct.controls.amount.hasError('required')">
+              Please input amount product!
+            </p>
+          </div>
+          <div class="text-danger"
+               *ngIf="formProduct.controls.amount.invalid
+                     && (formProduct.controls.amount.touched || formProduct.controls.amount.dirty)">
+            <p class="m-0" *ngIf="formProduct.controls.amount.hasError('min')">
+              Please input amount product bigger than zero!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row col-12">
+        <label for="description-add">Description: </label>
+        <input type="text" formControlName="description" id="description-add" class="form-control"
+               placeholder="Input description product!"
+               aria-describedby="helpAmountId">
+        <div class="text-danger"
+             *ngIf="formProduct.controls.description.invalid
+                     && (formProduct.controls.description.touched || formProduct.controls.description.dirty)">
+          <p class="m-0" *ngIf="formProduct.controls.description.hasError('required')">
+            Please input description for product!
+          </p>
+        </div>
+      </div>
+      <div class="form-group row col-12">
+        <label for="status-add">Status: </label>
+        <input type="text" formControlName="status" id="status-add" class="form-control"
+               placeholder="Input status product!"
+               aria-describedby="helpStatusId">
+        <div class="text-danger"
+             *ngIf="formProduct.controls.status.invalid
+                     && (formProduct.controls.status.touched || formProduct.controls.status.dirty)">
+          <p class="m-0" *ngIf="formProduct.controls.status.hasError('required')">
+            Please input status for product!
+          </p>
+        </div>
+      </div>
+      <div class="form-group row col-12">
+        <label for="catalog-add">Catalog: </label>
+        <select name="catalog" formControlName="subObject" [compareWith]="compareByObjectId" class="form-control" id="catalog-add">
+          <option value="">-----Please choose-----</option>
+          <option *ngFor="let catalog of subObjectList" [ngValue]="catalog">{{catalog.name}}</option>
+        </select>
+        <div class="text-danger"
+             *ngIf="formProduct.controls.subObject.invalid
+                     && (formProduct.controls.subObject.touched || formProduct.controls.subObject.dirty)">
+          <p class="m-0" *ngIf="formProduct.controls.subObject.hasError('required')">
+            Please choose subObject of product!
+          </p>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary" [disabled]="formProduct.invalid" (click)="updateObject()"
+                data-dismiss="modal">Save
+        </button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="col-3"></div>
+</div>

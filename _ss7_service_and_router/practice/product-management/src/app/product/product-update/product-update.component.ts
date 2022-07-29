@@ -65,7 +65,6 @@ export class ProductUpdateComponent implements OnInit {
       this.updateCategory();
     });
   }
-
   updateCategory() {
     this.productService.updateProduct(this.product.id, this.product).subscribe(() => {
       console.log('cap nhat thanh cong');
@@ -74,4 +73,5 @@ export class ProductUpdateComponent implements OnInit {
       console.log(e);
     });
   }
+
 }

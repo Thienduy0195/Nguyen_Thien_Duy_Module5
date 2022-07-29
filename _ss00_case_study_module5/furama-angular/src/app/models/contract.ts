@@ -3,9 +3,19 @@ import {Service} from "./service";
 
 export interface Contract {
   id: number;
-  customer: Customer;
-  service: Service;
-  startDate: string;
-  endDate: string;
+  customer: {
+    id: number,
+    name: string
+  };
+  service: {
+    id: number,
+    name: string
+  };
+  dateStart: string;
+  dateEnd: string;
   deposit: string;
+  employee: {
+    id: number,
+    name: string
+  }
 }

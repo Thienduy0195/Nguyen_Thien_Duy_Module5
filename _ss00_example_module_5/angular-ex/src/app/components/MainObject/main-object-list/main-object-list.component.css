@@ -1,0 +1,9 @@
+tr:hover {background-color: #b9bbbe}
+th, td{
+  text-align: center;
+}
+
+.modal-header{
+  background: #16181b;
+  color: #ffffff;
+}

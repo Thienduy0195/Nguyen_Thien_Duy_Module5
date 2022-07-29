@@ -23,102 +23,131 @@
   ],
   "customers": [
     {
-      "id": "KH-0001",
-      "name": "Nguyen Van A",
-      "birthday": "1990-02-02",
-      "gender": "1",
-      "idCard": "200814514",
-      "phoneNumber": "0915254154",
-      "email": "nguyenvana@codegym.com",
-      "address": "Da Nang",
-      "customerType": {
-        "id": 5,
-        "name": "Member"
-      }
-    },
-    {
-      "id": "KH-0002",
-      "name": "Nguyen Van B",
-      "birthday": "1990-02-02",
-      "gender": "1",
-      "idCard": "20084585895",
-      "phoneNumber": "0906254154",
+      "id": 1,
+      "customerCode": "KH-0002",
+      "name": "Nguyễn Công Binh",
+      "birthDay": "1990-02-02",
+      "gender": 1,
+      "idCard": "200845858",
+      "phone": "0906254154",
       "email": "nguyenvanb@codegym.com",
       "address": "Quang Nam",
       "customerType": {
+        "id": 4,
+        "name": "Silver"
+      },
+      "status": 1
+    },
+    {
+      "id": 2,
+      "customerCode": "KH-1222",
+      "name": "Pham Xuan Dieu",
+      "birthDay": "1992-08-08",
+      "gender": 0,
+      "idCard": "78585959869",
+      "phone": "0906789689",
+      "email": "xuandieu@gmail.com",
+      "address": "Đông Hà, Quảng Trị",
+      "customerType": {
         "id": 3,
         "name": "Gold"
-      }
+      },
+      "status": 1
     },
     {
-      "id": "KH-0003",
-      "name": "Nguyen Hong Ngan",
-      "birthday": "1996-02-02",
-      "gender": "0",
-      "idCard": "204859686",
-      "phoneNumber": "0906474857",
-      "email": "hongngan@gmail.com",
-      "address": "Quang Binh",
-      "customerType": {
-        "id": 2,
-        "name": "Platinum"
-      }
-    },
-    {
-      "id": "KH-2929",
-      "name": "Nguyen Van Binh",
-      "birthday": "2022-07-20",
-      "gender": "1",
+      "id": 3,
+      "customerCode": "KH-2929",
+      "name": "Nguyễn Công Ry",
+      "birthDay": "2022-07-20",
+      "gender": 1,
       "idCard": "589659686",
-      "phoneNumber": "0905383688",
-      "address": "16 Mai Lan Huong",
+      "phone": "0905383688",
+      "address": "Quang Ngai",
       "email": "vanbinh@gmail.com",
       "customerType": {
         "id": 2,
         "name": "Platinum"
-      }
+      },
+      "status": 1
     },
     {
-      "id": "KH-4845",
+      "id": 4,
+      "customerCode": "KH-4845",
       "name": "Nguyễn Thiên Duy",
-      "birthday": "2022-07-08",
-      "gender": "1",
+      "birthDay": "2022-07-08",
+      "gender": 0,
       "idCard": "586869606",
-      "phoneNumber": "0917579123",
-      "address": "Ngu Hanh Son",
+      "phone": "0917579123",
+      "address": "Da Nang",
       "email": "thienduy0195@gmail.com",
       "customerType": {
         "id": 1,
         "name": "Diamond"
-      }
+      },
+      "status": 1
     },
     {
-      "id": "KH-5485",
-      "name": "nguyen thi ban",
-      "birthday": "2022-07-01",
-      "gender": "0",
-      "idCard": "456566565",
-      "phoneNumber": "0905585865",
-      "address": "30 nguyen cong tranh",
-      "email": "thiban@gmail.com",
+      "id": 5,
+      "customerCode": "KH-4748",
+      "name": "Nguyen Cong Tranh",
+      "birthDay": "2022-07-09",
+      "gender": 1,
+      "idCard": "567567567",
+      "phone": "0906968797",
+      "address": "Da Nang",
+      "email": "congtranh@gmail.com",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "status": 1
+    },
+    {
+      "id": 6,
+      "customerCode": "KH-4848",
+      "name": "Nguyen Hoang Minh",
+      "birthDay": "2022-07-26",
+      "gender": 0,
+      "idCard": "904854903",
+      "phone": "0905947859",
+      "address": "Da Nang",
+      "email": "baolong@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "status": 1
+    },
+    {
+      "id": 7,
+      "customerCode": "KH-4575",
+      "name": "Tran Xuan Truong",
+      "birthDay": "2022-07-07",
+      "gender": 1,
+      "idCard": "777555555",
+      "phone": "0905857699",
+      "address": "Da Nang",
+      "email": "xuantruong@gmail.com",
       "customerType": {
         "id": 2,
         "name": "Platinum"
       }
     },
     {
-      "id": "KH-4748",
-      "name": "NGUYEN CONG TRANH",
-      "birthday": "2022-07-09",
-      "gender": "1",
-      "idCard": "567567567",
-      "phoneNumber": "0906968797",
-      "address": "Thai Phien",
-      "email": "congtranh@gmail.com",
+      "id": 8,
+      "customerCode": "KH-4595",
+      "name": "Tran Van Khanh",
+      "birthDay": "2022-07-27",
+      "gender": 0,
+      "idCard": "567676778",
+      "phone": "0909478567",
+      "address": "Quang Binh",
+      "email": "vankhanh@gmail.com",
       "customerType": {
-        "id": 1,
-        "name": "Diamond"
-      }
+        "id": 3,
+        "name": "Gold"
+      },
+      "status": 1
     }
   ],
   "services": [
@@ -237,7 +266,49 @@
   ],
   "contracts": [
     {
-      "id": 1,
+      "id": 2,
+      "customer": {
+        "id": 2,
+        "code": "KH-0002",
+        "name": "Nguyen Van B",
+        "birthday": "1990-02-02",
+        "gender": "1",
+        "idCard": "20084585895",
+        "phone": "0906254154",
+        "email": "nguyenvanb@codegym.com",
+        "address": "Quang Nam",
+        "customerType": {
+          "id": 3,
+          "name": "Gold"
+        },
+        "status": 1
+      },
+      "service": {
+        "id": 3,
+        "name": "Western Villa",
+        "area": 90,
+        "cost": 59,
+        "maxPeople": 3,
+        "serviceType": {
+          "id": 1,
+          "name": "Villa"
+        },
+        "roomStandard": "5 star",
+        "otherConvenient": "Forest",
+        "poolArea": 20,
+        "numberOfFloors": 3,
+        "rentType": {
+          "id": 1,
+          "name": "day"
+        },
+        "img": "hotel.jpg"
+      },
+      "dateStart": "2002-01-02",
+      "dateEnd": "2002-01-05",
+      "deposit": 23000000
+    },
+    {
+      "id": 3,
       "customer": {
         "id": 1,
         "code": "KH-0001",
@@ -245,13 +316,14 @@
         "birthday": "1990-02-02",
         "gender": "1",
         "idCard": "200814514",
-        "phoneNumber": "0915254154",
+        "phone": "0915254154",
         "email": "nguyenvana@codegym.com",
         "address": "Da Nang",
         "customerType": {
           "id": 5,
           "name": "Member"
-        }
+        },
+        "status": 1
       },
       "service": {
         "id": 1,
@@ -273,91 +345,9 @@
         },
         "img": "hotel.jpg"
       },
-      "startDate": "2002-01-02",
-      "endDate": "2002-01-05",
+      "dateStart": "2002-01-02",
+      "dateEnd": "2002-01-05",
       "deposit": 3460000
-    },
-    {
-      "id": 2,
-      "customer": {
-        "id": 2,
-        "code": "KH-0002",
-        "name": "Nguyen Van B",
-        "birthday": "1990-02-02",
-        "gender": "1",
-        "idCard": "20084585895",
-        "phoneNumber": "0906254154",
-        "email": "nguyenvanb@codegym.com",
-        "address": "Quang Nam",
-        "customerType": {
-          "id": 3,
-          "name": "Gold"
-        }
-      },
-      "service": {
-        "id": 3,
-        "name": "Western Villa",
-        "area": 90,
-        "cost": 59,
-        "maxPeople": 3,
-        "serviceType": {
-          "id": 1,
-          "name": "Villa"
-        },
-        "roomStandard": "5 star",
-        "otherConvenient": "Forest",
-        "poolArea": 20,
-        "numberOfFloors": 3,
-        "rentType": {
-          "id": 1,
-          "name": "day"
-        },
-        "img": "hotel.jpg"
-      },
-      "startDate": "2002-01-02",
-      "endDate": "2002-01-05",
-      "deposit": 23000000
-    },
-    {
-      "id": 3,
-      "customer": {
-        "id": 3,
-        "code": "KH-0003",
-        "name": "Nguyen Hong Ngan",
-        "birthday": "1996-02-02",
-        "gender": "0",
-        "idCard": "204859686",
-        "phoneNumber": "0906474857",
-        "email": "hongngan@gmail.com",
-        "address": "Quang Binh",
-        "customerType": {
-          "id": 2,
-          "name": "Platinum"
-        }
-      },
-      "service": {
-        "id": 3,
-        "name": "Western Villa",
-        "area": 90,
-        "cost": 59,
-        "maxPeople": 3,
-        "serviceType": {
-          "id": 1,
-          "name": "Villa"
-        },
-        "roomStandard": "5 star",
-        "otherConvenient": "Forest",
-        "poolArea": 20,
-        "numberOfFloors": 3,
-        "rentType": {
-          "id": 1,
-          "name": "day"
-        },
-        "img": "hotel.jpg"
-      },
-      "startDate": "2002-01-02",
-      "endDate": "2002-01-05",
-      "deposit": 10890000
     }
   ]
 }

@@ -58,7 +58,27 @@
       "id": 55555,
       "name": "Apple Ipad 2 Mini",
       "price": 5000,
-      "description": "Nice",
+      "description": "Nice Product",
+      "category": {
+        "id": "3",
+        "name": "Tablet"
+      }
+    },
+    {
+      "id": 448,
+      "name": "SamSung Note 11",
+      "price": 4000,
+      "description": "Good",
+      "category": {
+        "id": "1",
+        "name": "Phone"
+      }
+    },
+    {
+      "id": 699,
+      "name": "Lenovo Tablet",
+      "price": 55000,
+      "description": "Good",
       "category": {
         "id": "3",
         "name": "Tablet"

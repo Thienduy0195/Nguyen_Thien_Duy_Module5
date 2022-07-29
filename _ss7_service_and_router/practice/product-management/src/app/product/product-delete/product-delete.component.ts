@@ -22,7 +22,9 @@ export class ProductDeleteComponent implements OnInit {
 
   ngOnInit() {
     this.id = Number(this.activatedRoute.snapshot.params.id);
-    this.product = this.getProduct(this.id);
+    this.getProduct(this.id).subscribe(value => {
+      this.product = value;
+    })
     this.productForm = new FormGroup({
       id: new FormControl(this.product.id),
       name: new FormControl(this.product.name),

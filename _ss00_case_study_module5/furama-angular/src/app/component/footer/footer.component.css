@@ -1,14 +1,4 @@
 
-body {
-  font-family: sans-serif !important;
-}
-
-.nav-item {
-  margin: 0 1em;
-  font-weight: unset;
-  font-size: 1.1em;
-}
-
 p {
   font-size: 0.9em;
 }
@@ -17,79 +7,20 @@ a {
   color: white;
 }
 
-.container {
-  background-color: white;
-  /*margin: 0 0;*/
-  display: block;
-}
 
-a.navbar-brand {
-  padding: 0 0;
-}
-
-.first-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5em 2em 0.5em 1em;
-  width: 100%;
-}
 
 .logo {
   padding-left: 0;
   padding-right: 0;
 }
 
-.second-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.form-inline {
-  display: inline;
-  padding: 0;
-  margin: 0 0 0 3em;
-}
-
-.search-place{
-  margin: 0;
-}
-
-.create-button {
-  width: 25%;
-  display: inline;
-  margin-left: 2em;
-}
-
-
-.container-fluid {
-  margin: 0;
-  padding: 0;
-}
-
-.first-sub-nav {
-  margin-left: 5%;
-  padding: 0;
-}
-
-.second-sub-nav {
-  padding: 0;
-  display: flex;
-  float: left;
-}
-
-header {
-  background: #343a40;
-  color: white;
-}
-
 footer {
-  background: #ffffff;
+  /*background: #F1EAE1;*/
   font-family: "Tekton Pro";
 }
 
 footer .container {
-  background: #ffffff;
+
 }
 
 footer .introduce {

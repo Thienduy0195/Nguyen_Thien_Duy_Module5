@@ -15,8 +15,11 @@ import { CreateContractComponent } from './component/contract/create-contract/cr
 import { CreateServiceComponent } from './component/service/create-service/create-service.component';
 import { EditServiceComponent } from './component/service/edit-service/edit-service.component';
 import {HttpClientModule} from "@angular/common/http";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ErrorComponent } from './component/error/error.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ToastrModule} from "ngx-toastr";
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -39,7 +42,16 @@ import { ErrorComponent } from './component/error/error.component';
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot({
+            timeOut: 3000,
+            closeButton: true,
+            progressBar: true,
+            positionClass: 'toast-bottom-right',
+        }),
+        FormsModule,
+      NgxPaginationModule
     ],
   providers: [],
   bootstrap: [AppComponent]

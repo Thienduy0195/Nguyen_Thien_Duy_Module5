@@ -18,4 +18,8 @@ export class CustomerTypeService {
     return this.httpClient.get<CustomerType[]>(this.baseUrl);
   }
 
+  findById(id: number): Observable<CustomerType> {
+    return this.httpClient.get<CustomerType>(this.baseUrl + '/' + id);
+  }
+
 }

@@ -1,0 +1,91 @@
+<div class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light first-nav">
+      <div class="logo col-md-2">
+        <a class="navbar-brand navbar-expand-lg" href="#"><img
+          [src]="logoHeader" height="68"
+          width="auto"
+          alt="#"></a>
+      </div>
+      <div class="col-md-8 address-hotline">
+        <div style="display: inline; float: left" class="col-md-12 col-sm-10 col-12" id="address">
+          <h5>MADE BY CODEGYM STUDENT</h5>
+          <p>
+                    <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    </span>
+            <span>
+                        295 Nguyen Tat Thanh, Thanh Binh Ward, Thanh Khe District, Da Nang, Vietnam
+                    </span>
+          </p>
+          <p>
+                    <span>
+                    <i class="fa-solid fa-bookmark"></i>
+                    </span>
+            <span>
+                        7.0 km from Da Nang International Airport
+                    </span>
+          </p>
+          <p>
+                    <span>
+                    <i class="fa-solid fa-phone"></i>
+                    </span>
+            <span>
+                        84-236-6517-021
+                    </span>
+          </p>
+        </div>
+      </div>
+      <div class="admin-name col-md-2 col-sm-0" style="padding-right: 0">
+        <a href="#" style="font-size: 1em ; font-weight: 500; color: white">
+                <span>
+                    LOG IN
+                </span>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light second-nav col-md-12 col-sm-12">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div style="margin-left: 3%" class="col-md-7 col-sm-6 collapse navbar-collapse first-sub-nav "
+         id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            Ticket
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
+            <a class="dropdown-item"
+               href="#" [routerLink]="['list']" routerLinkActive="router-link-active">Ticket
+              management</a>
+            <a class="dropdown-item"
+               href="#" [routerLink]="['ticket/create']" routerLinkActive="router-link-active">Add new Ticket
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button"
+             data-toggle="dropdown" aria-expanded="false">
+            Coppany
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
+            <a class="dropdown-item"
+               [routerLink]="['company']" routerLinkActive="router-link-active">Company Management
+            </a>
+<!--            <a class="dropdown-item"-->
+<!--               href="#" [routerLink]="['sub-object/create']" routerLinkActive="router-link-active">Add new Sub Object-->
+<!--            </a>-->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

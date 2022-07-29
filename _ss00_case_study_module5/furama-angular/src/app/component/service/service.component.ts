@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {FacilityService} from "../../services/facility.service";
 import {Service} from "../../models/service";
+import {ToastrService} from "ngx-toastr";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-service',
@@ -14,12 +16,18 @@ export class ServiceComponent implements OnInit {
 
   serviceList: Service [];
 
-  carouselCover1 ='/assets/img/facility-cover-1.jpg';
-  carouselCover2 ='/assets/img/facility-cover-2.jpg';
+  searchForm: FormGroup = new FormGroup({
+    name: new FormControl()
+  })
+
+  carouselCover1 = '/assets/img/facility-cover-1.jpg';
+  carouselCover2 = '/assets/img/facility-cover-2.jpg';
 
   constructor(private title: Title,
-              private facilityService: FacilityService) {
+              private facilityService: FacilityService,
+              private toastr: ToastrService) {
     this.title.setTitle('Furama | Facility  ')
+    this.toastr.show('Welcome to facility list!', 'FACILITY MANAGEMENT');
   }
 
   ngOnInit(): void {
@@ -30,4 +38,7 @@ export class ServiceComponent implements OnInit {
     })
   }
 
+  searchName() {
+    alert(this.searchForm.value.name)
+  }
 }

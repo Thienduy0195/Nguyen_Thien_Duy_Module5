@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://localhost:3000'
+  API_URL: 'http://localhost:3000',
+  API_URL_8080: 'http://localhost:8080/api/customer',
+  API_URL_8080_CONTRACT: 'http://localhost:8080/api/contracts'
 };
 
 /*

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1fd21c3-d68b-42b9-b653-50f8ec035a28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/.idea/_ss00_example_module_5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/css/contract.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/css/customer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/css/general.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/css/service.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/css/style_create.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/bootstrap/bootstrap/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/img/exam-home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/img/exam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/img/exam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_ss00_example_module_5/angular-ex/src/assets/popper/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/.idea/excercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/image-slider/image-slider.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/image-slider/image-slider/image-slide/image-slide.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/image-slider/image-slider/image-slide/image-slide.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/image-slider/image-slider/image-slide/image-slide.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/image-slider/image-slider/image-slider.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/image-slider/image-slider/image-slider.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/app/image-slider/image-slider/image-slider.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/assets/bootstrap/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/assets/bootstrap/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excercise/image-slider/src/assets/bootstrap/bootstrap/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-gallery-app/src/app/image-gallery/token.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../product_manager_project/.idea/product_manager_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/contract.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/contract.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/contract.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/contract.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/create-contract/create-contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/contract/create-contract/create-contract.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/create-customer/create-customer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/create-customer/create-customer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/create-customer/create-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/create-customer/create-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/create-customer/create-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/create-customer/create-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/customer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/customer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/edit-customer/edit-customer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/edit-customer/edit-customer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/edit-customer/edit-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/edit-customer/edit-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/edit-customer/edit-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/customer/edit-customer/edit-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/service/service.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/service/service.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/service/service.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/component/service/service.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/models/contract.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/models/contract.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/models/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/models/customer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/services/contract.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/services/contract.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/services/customer-type.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/services/customer-type.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/services/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/app/services/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss00_case_study_module5/furama-angular/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss6_angular_form/practice/todo-form-practice/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss6_angular_form/practice/todo-form-practice/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss7_service_and_router/practice/product-management/src/app/product/product-update/product-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../_ss7_service_and_router/practice/product-management/src/app/product/product-update/product-update.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_ss7_service_and_router/practice/product-management/src/app/service/category.service.spec.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Cae2yJ0kBMwm41elrWTWYQ75Kc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../excercise" />
+    <property name="ts.external.directory.path" value="D:\CG_FULL_STACK\CG_MODULE_5\_ss8_modules_and_dependency Injection\practice\angular-gallery-app\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CG_FULL_STACK\CG_MODULE_5\_ss8_modules_and_dependency Injection\practice\angular-gallery-app\src\app\image-gallery" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1fd21c3-d68b-42b9-b653-50f8ec035a28" name="Default Changelist" comment="" />
+      <created>1659044919509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659044919509</updated>
+      <workItem from="1659044920780" duration="2632000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1659048883202">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1659048883202" />
+  </component>
+</project>

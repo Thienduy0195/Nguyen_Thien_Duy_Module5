@@ -1,0 +1,183 @@
+
+body {
+  font-family: sans-serif !important;
+}
+
+.nav-item {
+  margin: 0 1em;
+  font-weight: unset;
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+.container-body{
+  padding: 2em 0;
+}
+
+a.navbar-brand {
+  padding: 0 0;
+}
+
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 2em 0.5em 1em;
+  width: 100%;
+}
+
+.logo {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.second-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: black;
+}
+
+.form-inline {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.first-sub-nav {
+  margin-left: 5%;
+  padding: 0;
+}
+
+.second-sub-nav {
+  padding: 0;
+  display: flex;
+  float: left;
+}
+
+header {
+  background: #343a40;
+  color: white;
+}
+
+.second-nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.admin-name {
+  padding-right: 0;
+  padding-left: 2em;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ffffff; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+
+/*.nav-item {*/
+/*  margin: 0 1em;*/
+/*  font-weight: unset;*/
+/*  font-size: 1.1em;*/
+/*}*/
+
+/*p {*/
+/*  font-size: 0.9em;*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+/*a.navbar-brand {*/
+/*  padding: 0 0;*/
+/*}*/
+
+/*.logo {*/
+/*  padding-left: 0;*/
+/*  padding-right: 0;*/
+/*}*/
+
+/*.second-nav {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  width: 100%;*/
+/*}*/
+
+/*.form-inline {*/
+/*  display: inline;*/
+/*  padding: 0;*/
+/*  margin: 0 0 0 3em;*/
+/*}*/
+
+/*.search-place{*/
+/*  margin: 0;*/
+/*}*/
+
+/*.search-button{*/
+/*  margin-left: 1em;*/
+/*}*/
+
+
+/*.create-button {*/
+/*  width: 25%;*/
+/*  display: inline;*/
+/*  margin-left: 2em;*/
+/*}*/
+
+/*.container-fluid {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+/*.first-sub-nav {*/
+/*  margin-left: 5%;*/
+/*  padding: 0;*/
+/*}*/
+
+/*.second-sub-nav {*/
+/*  padding: 0;*/
+/*  display: flex;*/
+/*  float: left;*/
+/*  margin-left: 8em;*/
+/*}*/
+
+/*header {*/
+/*  background: #343a40;*/
+/*  color: white;*/
+/*}*/
+
+/*.second-nav {*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  z-index: 99;*/
+/*}*/
+
+/*li {*/
+/*  padding: 0 0;*/
+/*}*/
+
+/*.admin-name {*/
+/*  padding-right: 0;*/
+/*  padding-left: 2em;*/
+/*}*/

@@ -3,6 +3,7 @@ import {FormControl, FormGroup} from '@angular/forms';
 import {ProductService} from '../../service/product.service';
 import {CategoryService} from '../../service/category.service';
 import {Category} from '../../model/category';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product-create',
@@ -24,7 +25,8 @@ export class ProductCreateComponent implements OnInit {
     }),
   });
   constructor(private productService: ProductService,
-              private categoryService: CategoryService) {
+              private categoryService: CategoryService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -40,6 +42,7 @@ export class ProductCreateComponent implements OnInit {
       this.productService.saveProduct(product).subscribe(() => {
         alert('Tạo thành công');
         this.productForm.reset();
+        this.router.navigateByUrl('/product/list');
       }, e => console.log(e));
       this.productForm.reset();
     });

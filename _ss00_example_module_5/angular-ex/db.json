@@ -1,0 +1,122 @@
+{
+  "mainobjects": [
+    {
+      "id": 1,
+      "price": 24500,
+      "startDes": "Nha Trang",
+      "endDes": "Sai Gon",
+      "startDate": "2022-07-07",
+      "startHour": "22:22",
+      "subObject": {
+        "id": 1,
+        "name": "Phuong Trang"
+      },
+      "amount": 0
+    },
+    {
+      "id": 2,
+      "price": 24500,
+      "startDes": "Ha Noi",
+      "endDes": "Quang Ninh",
+      "startDate": "2022-07-07",
+      "startHour": "22:22",
+      "subObject": {
+        "id": 2,
+        "name": "Hoang Trung"
+      },
+      "amount": 0
+    },
+    {
+      "id": 3,
+      "price": 24500,
+      "startDes": "Ha Noi",
+      "endDes": "Nha Trang",
+      "startDate": "2022-07-07",
+      "startHour": "22:22",
+      "subObject": {
+        "id": 2,
+        "name": "Hoang Trung"
+      },
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "price": 24500,
+      "startDes": "Ha Noi",
+      "endDes": "Nghe An",
+      "startDate": "2022-07-07",
+      "startHour": "22:22",
+      "subObject": {
+        "id": 1,
+        "name": "Phuong Trang"
+      },
+      "amount": 0
+    },
+    {
+      "id": 5,
+      "price": 24500,
+      "startDes": "Ha Noi",
+      "endDes": "Sai Gon",
+      "startDate": "2022-07-07",
+      "startHour": "22:22",
+      "subObject": {
+        "id": 1,
+        "name": "Phuong Trang"
+      },
+      "amount": 2
+    },
+    {
+      "id": 6,
+      "price": 3000,
+      "startDes": "Da Nang",
+      "endDes": "Quang Ngai",
+      "startDate": "2022-07-07",
+      "startHour": "15:35",
+      "subObject": {
+        "id": 3,
+        "name": "Truong Thinh"
+      },
+      "amount": 2
+    },
+    {
+      "id": 7,
+      "price": 5000,
+      "startDes": "Da Nang",
+      "endDes": "Quang Binh",
+      "startDate": "2022-07-15",
+      "startHour": "16:29",
+      "subObject": {
+        "id": 2,
+        "name": "Hoang Trung"
+      },
+      "amount": 4
+    },
+    {
+      "id": 8,
+      "price": 30000,
+      "startDes": "Ha Noi",
+      "endDes": "Bac Giang",
+      "startDate": "2022-07-30",
+      "startHour": "20:20",
+      "subObject": {
+        "id": 2,
+        "name": "Hoang Trung"
+      },
+      "amount": 3
+    }
+  ],
+  "subobjects": [
+    {
+      "id": 1,
+      "name": "Phuong Trang"
+    },
+    {
+      "id": 2,
+      "name": "Hoang Trung"
+    },
+    {
+      "id": 3,
+      "name": "Truong Thinh"
+    }
+  ]
+}

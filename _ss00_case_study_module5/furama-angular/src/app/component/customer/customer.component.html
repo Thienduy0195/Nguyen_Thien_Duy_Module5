@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" style="padding: 0 0!important;">
   <div class="home-body">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -17,12 +17,12 @@
   </div>
 </div>
 <div style="width: 100%" class="col-md-12">
-  <div class="container text-center">
-    <h1 class="">CUSTOMER LIST</h1>
+  <div class="container text-center font-italic">
+    <h1 class="">--- CUSTOMER LIST ---</h1>
   </div>
   <div class="container" style="clear: both">
     <table class="table table-striped" id="tableCustomer"
-           style="border-color: #a71d2a; margin: 0; background-color: white">
+           style="border-color: #a71d2a; margin: 0; background-color: white; font-size: 0.9em">
       <thead class="thead-dark">
       <tr>
         <th>#</th>
@@ -35,37 +35,77 @@
         <th>Cus type</th>
         <th>Email</th>
         <th>Address</th>
-        <th>Action</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
       </thead>
       <tbody id="customerList">
-      <tr *ngFor="let customer of customerList, index as idx">
+      <tr *ngFor="let customer of customerList |  paginate: {itemsPerPage: 5, currentPage: pageNumber, totalItems: totalPages }, index as idx">
         <td>{{ idx + 1 }}</td>
         <td>{{ customer.id }}</td>
         <td>{{ customer.name }}</td>
-        <td>{{ customer.birthday }}</td>
+        <td>{{ customer.birthDay }}</td>
         <td *ngIf="customer.gender == 1; else femaleTd">Male</td>
         <ng-template #femaleTd>
           <td>Female</td>
         </ng-template>
         <td>{{ customer.idCard }}</td>
-        <td>{{ customer.phoneNumber }}</td>
+        <td>{{ customer.phone }}</td>
         <td>{{ customer.customerType.name }}</td>
-        <td>{{ customer.email }}</td>
+        <td>{{ customer.email}}</td>
         <td>{{ customer.address }}</td>
-                <td>
-                  <a class="btn btn-outline-warning mx-1" routerLink="/customer/update/{{customer.id}}">
-                    edit
-                  </a>
-                  <button type="button" class="btn btn-outline-danger"
-                          data-toggle="modal" data-target="#deleteModal"
-                  >
-                    <i class='bx bx-trash bx-sx'></i>
-                  </button>
-                </td>
+        <td>
+          <a class="btn btn-outline-warning mx-1" routerLink="/customer/update/{{customer.id}}">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a>
+        </td>
+        <td>
+          <button (click)="getObject(customer)" type="button" class="btn btn-outline-danger"
+                  data-toggle="modal" data-target="#deleteModal">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </td>
       </tr>
       </tbody>
     </table>
+    <pagination-controls (pageChange)="pageNumber = $event">...</pagination-controls>
   </div>
 </div>
+
+
+<!-- Modal Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Confirm Delete?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="confirmDelete">
+        <div class="modal-body">
+          <input type="hidden" name="action" value="delete">
+          <input type="hidden" id="id_delete" name="id">
+          <div [ngModel]="name">
+            <p>
+              <span>Do you want to delete</span>
+              <span class="font-weight-bold text-primary"> {{name}} ?</span>
+            </p>
+            <p><span>CODE: </span>
+            <span class="text-primary font-weight-bold" [ngModel]="code">{{code}}</span></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+          <button (click)="deleteObject()" data-dismiss="modal" class="btn btn-danger delete">YES</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 

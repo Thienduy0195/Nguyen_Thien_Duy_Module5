@@ -1,0 +1,113 @@
+
+<div style="width: 100%" class="col-md-12">
+  <div class="container font-italic text-center">
+    <h1 class="">--- TICKET MANAGEMENT ---</h1>
+  </div>
+  <div class="container d-flex mb-3">
+    <div class="search row-cols-1 col-md-6 row-col-sm-6 second-sub-nav p-0" style="float: right">
+      <div class="form-inline">
+        <label for="searchStartDes" class="mr-1 font-weight-bold text-success">ENTER START DESTINATION:</label>
+        <input #start type="text" id="searchStartDes" class="form-control border-secondary" (keydown.enter)="searchStartDestination(start.value)"
+               placeholder="Enter start destination...">
+      </div>
+    </div>
+    <div class="search row-cols-1 col-md-6 row-col-sm-6 second-sub-nav p-0" style="float: right">
+      <div class="form-inline">
+        <label for="searchEndDes" class="mr-1 font-weight-bold  text-success">ENTER END DESTINATION:</label>
+        <input #end type="text" id="searchEndDes" class="form-control border-secondary" (keydown.enter)="searchEndDestination(end.value)"
+               placeholder="Enter end destination...">
+      </div>
+    </div>
+<!--    <div class="search row-cols-1 col-md-4 row-col-sm-6 second-sub-nav p-0" style="float: right">-->
+<!--      <div class="form-inline">-->
+<!--        <label for="search" class="mr-1 font-weight-bold">SEARCH HERE:</label>-->
+<!--        <input #element type="text" id="search" class="form-control border-secondary" (keydown.enter)="searchStartDestination(element.value)"-->
+<!--               placeholder="Enter start destination...">-->
+<!--      </div>-->
+<!--    </div>-->
+  </div>
+  <div class="container" style="clear: both">
+    <table class="table table-striped" id="tableCustomer"
+           style="border-color: #a71d2a; margin: 0; background-color: white; font-size: 0.9em">
+      <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th>Price</th>
+        <th>Start Des</th>
+        <th>End Des</th>
+        <th>Start date</th>
+        <th>Start Hour</th>
+        <th>Company</th>
+        <th>Amount</th>
+        <th>Booking</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of ticketList | paginate : { itemsPerPage: 5, currentPage: page }">
+        <td>{{item.id}}</td>
+        <td>{{item.price | currency}}</td>
+        <td>{{item.startDes}}</td>
+        <td>{{item.endDes}}</td>
+        <td>{{item.startDate}}</td>
+        <td>{{item.startHour}}</td>
+        <td>{{item.subObject.name}}</td>
+        <td>{{item.amount}}</td>
+        <td>
+          <a class="btn btn-outline-success w-50 btn-sm ml-1 mr-1" (click)="getTicketId(item.id)"
+             data-toggle="modal" data-target="#deleteModal">BOOK</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="justify-content: space-around;display: flex;">
+    <pagination-controls (pageChange)="page = $event" class=" page-item"></pagination-controls>
+  </div>
+</div>
+
+<!-- Modal book ticket -->
+<div *ngIf="checkTicket" class="modal fade" id="deleteModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CONFIRM BEFORE BOOKING TICKET?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="confirmDelete">
+        <div class="modal-body">
+          <input type="hidden" name="action" value="delete">
+          <input type="hidden" id="id_delete" name="id">
+          <div>
+            <p class="font-italic font-weight-bold">Do you want booking this ticket?</p>
+            <p>
+              <span>Start Destination: </span>
+              <span class="font-weight-bold">{{startDes}}</span>
+            </p>
+            <p>
+              <span>End Destination: </span>
+              <span class="font-weight-bold">{{endDes}}</span>
+            </p>
+            <p>
+              <span>Start Date: </span>
+              <span class="font-weight-bold">{{startDate}}</span>
+            </p>
+            <p>
+              <span>Start Hour: </span>
+              <span class="font-weight-bold">{{startHour}}</span>
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+          <button (click)="bookingTicket()" data-dismiss="modal" class="btn btn-success delete">YES</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<i class="fa-solid fa-trash"></i>-->
