@@ -37,8 +37,7 @@ export class TicketService {
   }
 
   public search(startDes: string, endDes: string, startDate: string, endDate: string): Observable<Ticket[]> {
-    return this.httpClient.get<Ticket[]>
-    (`${this.URL_TICKET_API}/tickets/search/${startDes}&${endDes}&${startDate}&${endDate}`);
+    return this.httpClient.get<Ticket[]>(`${this.URL_TICKET_API}/search/${startDes}&${endDes}&${startDate}&${endDate}`);
   }
 
 //BD JSON ----
@@ -58,23 +57,23 @@ export class TicketService {
     return this.httpClient.get<Ticket>(this.URL_TICKET + '/' + id);
   }
 
-  searchStartDes(s: string): Observable<Ticket[]> {
-    if (s) {
-      return this.httpClient
-        .get<Ticket[]>(this.URL_TICKET + `/?startDes_like=${s.trim()}`)
-        .pipe(tap((_) => console.log(`Searching for: ${s}`)));
-    } else {
-      return this.httpClient.get<Ticket[]>(this.URL_TICKET);
-    }
-  }
+  // searchStartDes(s: string): Observable<Ticket[]> {
+  //   if (s) {
+  //     return this.httpClient
+  //       .get<Ticket[]>(this.URL_TICKET + `/?startDes_like=${s.trim()}`)
+  //       .pipe(tap((_) => console.log(`Searching for: ${s}`)));
+  //   } else {
+  //     return this.httpClient.get<Ticket[]>(this.URL_TICKET);
+  //   }
+  // }
 
-  searchEndDes(s: string): Observable<Ticket[]> {
-    if (s) {
-      return this.httpClient
-        .get<Ticket[]>(this.URL_TICKET + `/?endDes_like=${s.trim()}`)
-        .pipe(tap((_) => console.log(`Searching for: ${s}`)));
-    } else {
-      return this.httpClient.get<Ticket[]>(this.URL_TICKET);
-    }
-  }
+  // searchEndDes(s: string): Observable<Ticket[]> {
+  //   if (s) {
+  //     return this.httpClient
+  //       .get<Ticket[]>(this.URL_TICKET + `/?endDes_like=${s.trim()}`)
+  //       .pipe(tap((_) => console.log(`Searching for: ${s}`)));
+  //   } else {
+  //     return this.httpClient.get<Ticket[]>(this.URL_TICKET);
+  //   }
+  // }
 }

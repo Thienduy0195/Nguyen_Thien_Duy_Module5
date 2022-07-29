@@ -33,8 +33,8 @@ export class SubObjectComponent implements OnInit {
   }
 
   getCompanyList() {
-    this.companyService.getAllCompanyApi().subscribe(value => {
-      this.companyList = value;
+    this.companyService.getAllCompanyApi().subscribe((value:any) => {
+      this.companyList = value.content;
       this.totalPages = value.length;
     })
   }

@@ -34,7 +34,7 @@ export class MainObjectEditComponent implements OnInit {
   }
 
   constructor(private productService: TicketService,
-              private catalogService: CompanyService,
+              private companyService: CompanyService,
               private activatedRoute: ActivatedRoute,
               private toastr: ToastrService,
               private title: Title,
@@ -56,10 +56,9 @@ export class MainObjectEditComponent implements OnInit {
 
 
   getAllCompany() {
-    this.catalogService.getAllCompanyApi().subscribe(value => {
-      this.companyList = value;
-      console.log(value)
-    });
+    this.companyService.getAllCompanyApi().subscribe((value:any) => {
+      this.companyList = value.content;
+    })
   }
 
   updateTicket() {

@@ -36,7 +36,7 @@
       </thead>
       <tbody id="customerList">
       <tr
-        *ngFor="let company of companyList |  paginate: {itemsPerPage: 2, currentPage: pageNumber, totalItems: totalPages }, index as idx">
+        *ngFor="let company of companyList |  paginate: {itemsPerPage: 3, currentPage: pageNumber, totalItems: totalPages }, index as idx">
         <td>{{ idx + 1 }}</td>
         <td>{{ company.id }}</td>
         <td>{{ company.name }}</td>

@@ -32,7 +32,7 @@
         <div class="form-group row col-12">
           <label for="catalog-add">Company: </label>
           <select name="catalog" formControlName="company" class="form-control" id="catalog-add">
-            <option value="">-----Please choose-----</option>
+            <option [ngValue]="null">-----Please choose-----</option>
             <option *ngFor="let catalog of companyList" [ngValue]="catalog">{{catalog.name}}</option>
           </select>
           <div class="text-danger"

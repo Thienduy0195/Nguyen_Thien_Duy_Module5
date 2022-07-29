@@ -8,7 +8,7 @@
         <label for="searchStartDes" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-flag-checkered"></i>
         </label>
-        <input [(ngModel)]="startDes" type="text" id="searchStartDes" class="form-control border-secondary"
+        <input [(ngModel)]="startDesSearch" type="text" id="searchStartDes" class="form-control border-secondary"
                placeholder="Enter start destination...">
       </div>
     </div>
@@ -17,7 +17,7 @@
         <label for="searchEndDes" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-location-dot"></i>
         </label>
-        <input [(ngModel)]="endDes" type="text" id="searchEndDes" class="form-control border-secondary"
+        <input [(ngModel)]="endDesSearch" type="text" id="searchEndDes" class="form-control border-secondary"
                placeholder="Enter end destination...">
       </div>
     </div>
@@ -26,7 +26,7 @@
         <label for="searchStartDate" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-hourglass-start"></i>
         </label>
-        <input [(ngModel)]="startDate" type="date" id="searchStartDate" class="form-control border-secondary"
+        <input [(ngModel)]="startDateSearch" type="date" id="searchStartDate" class="form-control border-secondary"
                placeholder="Enter start destination...">
       </div>
     </div>
@@ -35,7 +35,7 @@
         <label for="searchEndDes" class="mr-1 font-weight-bold">
           <i class="fa-solid fa-hourglass-end"></i>
         </label>
-        <input [(ngModel)]="endDate" type="date" id="searchEndDate" class="form-control border-secondary"
+        <input [(ngModel)]="endDateSearch" type="date" id="searchEndDate" class="form-control border-secondary"
                placeholder="Enter end destination...">
       </div>
     </div>
@@ -63,27 +63,27 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let item of ticketList | paginate : { itemsPerPage: 5, currentPage: page }">
-        <td>{{item.id}}</td>
-        <td>{{item.price | currency}}</td>
-        <td>{{item.startDes}}</td>
-        <td>{{item.endDes}}</td>
-        <td>{{item.startDate | date:"dd/MM/yy" }}</td>
-        <td>{{item.startHour}}</td>
-        <td>{{item.company.name}}</td>
-        <td>{{item.amount}}</td>
+      <tr *ngFor="let ticket of ticketList | paginate : { itemsPerPage: 5, currentPage: page }">
+        <td>{{ticket.id}}</td>
+        <td>{{ticket.price | currency}}</td>
+        <td>{{ticket.startDes}}</td>
+        <td>{{ticket.endDes}}</td>
+        <td>{{ticket.startDate | date:"dd/MM/yy" }}</td>
+        <td>{{ticket.startHour}}</td>
+        <td>{{ticket.company.name}}</td>
+        <td>{{ticket.amount}}</td>
         <td>
-          <a class="btn btn-outline-success btn-sm ml-1 mr-1" (click)="getTicketId(item.id)"
+          <a class="btn btn-outline-success btn-sm ml-1 mr-1" (click)="getTicketId(ticket.id)"
              data-toggle="modal" data-target="#bookingModal">BOOK</a>
         </td>
         <td>
-          <a class="btn btn-outline-warning w-50 btn-sm ml-1 mr-1" routerLink="/ticket/edit/{{item.id}}"
-             (click)="getTicketId(item.id)">
+          <a class="btn btn-outline-warning w-50 btn-sm ml-1 mr-1" routerLink="/ticket/edit/{{ticket.id}}"
+             (click)="getTicketId(ticket.id)">
             <i class="fa-solid fa-pen-to-square"></i>
           </a>
         </td>
         <td>
-          <a class="btn btn-outline-danger w-50 btn-sm ml-1 mr-1" (click)="getTicketId(item.id)"
+          <a class="btn btn-outline-danger w-50 btn-sm ml-1 mr-1" (click)="getTicketId(ticket.id)"
              data-toggle="modal" data-target="#deleteModal">
             <i class="fa-solid fa-trash"></i>
           </a>
@@ -157,15 +157,15 @@
             <p class="font-italic font-weight-bold">Do you want delete this ticket?</p>
             <p>
               <span>Start Destination: </span>
-              <span class="font-weight-bold">{{startDes}}</span>
+              <span class="font-weight-bold">{{startDesSearch}}</span>
             </p>
             <p>
               <span>End Destination: </span>
-              <span class="font-weight-bold">{{endDes}}</span>
+              <span class="font-weight-bold">{{endDesSearch}}</span>
             </p>
             <p>
               <span>Start Date: </span>
-              <span class="font-weight-bold">{{startDate}}</span>
+              <span class="font-weight-bold">{{startDateSearch}}</span>
             </p>
             <p>
               <span>Start Hour: </span>

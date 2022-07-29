@@ -47,7 +47,6 @@ public class TicketService implements ITicketService {
         return this.iTicketRepository.search("%" + startDes + "%", "%" + endDes + "%", startDate, endDate, pageble);
     }
 
-
     @Override
     public Page<Ticket> findAllPageable(Pageable pageable) {
         return this.iTicketRepository.findAll(pageable);

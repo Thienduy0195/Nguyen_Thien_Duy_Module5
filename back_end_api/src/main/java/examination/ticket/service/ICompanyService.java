@@ -1,9 +1,9 @@
 package examination.ticket.service;
 
 import examination.ticket.models.Company;
-
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface ICompanyService {
-    List<Company> findAll();
+    Page<Company> findAll(Pageable pageable);
 }

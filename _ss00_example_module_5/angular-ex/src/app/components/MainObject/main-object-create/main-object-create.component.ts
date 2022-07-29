@@ -43,11 +43,9 @@ export class MainObjectCreateComponent implements OnInit {
   }
 
   getAllCompany() {
-    this.companyService.getAllCompanyApi().subscribe(value => {
-      // @ts-ignore
-      this.companyList = value;
-      console.log(value)
-    });
+    this.companyService.getAllCompanyApi().subscribe((value:any) => {
+      this.companyList = value.content;
+    })
   }
 
   addNewTicket() {

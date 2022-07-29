@@ -8,15 +8,15 @@ import {Observable} from "rxjs";
 })
 export class CompanyService {
 
-  private URL_CATALOG_API = 'http://localhost:3000/subobjects';
+  // private URL_CATALOG_API = 'http://localhost:3000/subobjects';
   private URL_COMPANY_API = 'http://localhost:8080/company';
 
   constructor(private httpClient: HttpClient) {
   }
 
-  getAllCompany(): Observable<Company[]> {
-    return this.httpClient.get<Company[]>(this.URL_CATALOG_API);
-  }
+  // getAllCompany(): Observable<Company[]> {
+  //   return this.httpClient.get<Company[]>(this.URL_CATALOG_API);
+  // }
 
   getAllCompanyApi(): Observable<Company[]> {
     return this.httpClient.get<Company[]>(this.URL_COMPANY_API + '/list');
