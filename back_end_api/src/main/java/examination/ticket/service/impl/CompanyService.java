@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class CompanyService implements ICompanyService {
 
     @Autowired
-    ICompanyRepository iCompanyRepository;
+    private ICompanyRepository iCompanyRepository;
 
     @Override
     public Page<Company> findAll(Pageable pageable) {

@@ -14,7 +14,7 @@ import java.util.List;
 public class TicketService implements ITicketService {
 
     @Autowired
-    ITicketRepository iTicketRepository;
+    private ITicketRepository iTicketRepository;
 
 
     @Override
